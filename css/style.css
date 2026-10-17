@@ -353,7 +353,7 @@ section{padding-block:72px;}
 .testi-body p{
   font-family:'Zilla Slab',serif;font-style:italic;font-weight:500;
   font-size:1.3rem;line-height:1.5;color:#fff;max-width:46ch;margin:10px 0 0;
-  display:-webkit-box;-webkit-line-clamp:6;-webkit-box-orient:vertical;overflow:hidden;
+  display:-webkit-box;-webkit-line-clamp:6;line-clamp:6;-webkit-box-orient:vertical;overflow:hidden;
 }
 .testi-body .who{margin-top:22px;font-style:italic;font-weight:700;font-size:1rem;color:#fff;}
 .testi-body .branch{margin-top:2px;font-size:.85rem;color:rgba(255,255,255,.8);}
@@ -1611,3 +1611,57 @@ body.ac-open{overflow:hidden;}
 .dept-subnav-inner a{flex:0 0 auto;font-size:.86rem;font-weight:700;text-decoration:none;color:var(--ink-700);padding:9px 18px;border-radius:999px;white-space:nowrap;transition:background .2s ease,color .2s ease;}
 .dept-subnav-inner a:hover{background:var(--paper-100);color:var(--navy-900);}
 .dept-subnav-inner a.on{background:var(--navy-900);color:#fff;}
+
+/* =====================================================================
+   MOBILE HARDENING (appended last so it wins) — fixes horizontal scroll,
+   header overflow and grid blow-outs on phones.
+   ===================================================================== */
+html{-webkit-text-size-adjust:100%;}
+body{overflow-x:clip;}
+img,video,svg,iframe,canvas{max-width:100%;}
+img,video{height:auto;}
+.hero-slide img,.logo-slot img,.brand-mark img{height:100%;}
+table{max-width:100%;}
+.table-wrap,.tbl-wrap,[class*="table-scroll"]{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+h1,h2,h3,h4,h5,p,li,a{overflow-wrap:break-word;}
+
+@media (max-width:820px){
+  /* grid children must be allowed to shrink */
+  [class*="grid"] > *,.dept-admissions-grid > *{min-width:0;}
+  .alumni-grid,.alumni-featured-grid,.dept-admissions-grid{grid-template-columns:minmax(0,1fr);}
+  .dept-admissions-grid{gap:26px;}
+  .dept-adm-step .t{min-width:0;}
+  .wrap{padding-inline:max(16px,4vw);}
+}
+@media (max-width:640px){
+  section{scroll-margin-top:var(--nav-h);}
+  .btn,.btn-primary,.btn-outline,.btn-ghost{max-width:100%;}
+  [class*="-cta"] .btn,[class*="cta"] .btn{width:100%;justify-content:center;}
+  .section-head h2,.dept-h2{font-size:clamp(1.45rem,6.4vw,1.9rem);}
+}
+@media (max-width:420px){
+  /* header: logo + 2-line name + compact MENU must fit in 360px phones */
+  .brand{gap:8px;flex:1 1 auto;min-width:0;}
+  .brand-mark{width:44px;height:44px;flex:0 0 auto;}
+  .brand-text{min-width:0;}
+  .brand-text strong{font-size:.86rem;white-space:normal;line-height:1.15;}
+  .brand-text span{font-size:.64rem;white-space:normal;}
+  .btn-menu{flex:0 0 auto;padding:10px 12px;font-size:.8rem;gap:6px;}
+  .btn-menu svg{width:15px;height:15px;}
+}
+@media (max-width:360px){
+  .brand-text span{display:none;}
+}
+/* inline-style grids (alumni 3-col on dept pages, IQAC 2-col) must collapse on phones */
+@media (max-width:820px){
+  .alumni-grid[style*="grid-template-columns"]{grid-template-columns:repeat(2,minmax(0,1fr)) !important;}
+}
+@media (max-width:640px){
+  .alumni-grid[style*="grid-template-columns"],
+  [class*="grid"][style*="grid-template-columns:1fr 1fr"]{grid-template-columns:minmax(0,1fr) !important;}
+}
+/* hero: dots overlay the photo on phones (no black strip under the slideshow) */
+@media (max-width:640px){
+  .hero-dots{position:absolute;left:0;right:0;bottom:10px;padding:0;}
+  .hero-dots .wrap{justify-content:center;}
+}

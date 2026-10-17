@@ -85,6 +85,9 @@ window.photoFail = function (img, label) {
     '<small style="font-size:.72rem;max-width:200px;display:block;margin-top:6px;">' +
     'Photo not found — drop the file in /images (see images/README.md)</small>';
 };
+// replay failures that happened before this script loaded
+(window.__pfq||[]).forEach(function (q) { window.photoFail(q[0], q[1]); });
+window.__pfq = [];
 
 (function heroSlideshow() {
   var slides = document.querySelectorAll('.hero-slide');
