@@ -1,0 +1,592 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Civil Engineering | S.D. College of Engineering &amp; Technology, Muzaffarnagar</title>
+<meta name="description" content="Department of Civil Engineering at S.D. College of Engineering & Technology, Muzaffarnagar — about the department, vision & mission and PEOs/POs/PSOs.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600;700&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="icon" href="../images/logo.png">
+</head>
+<body>
+
+<div class="utility-bar">
+  <div class="utility-row">
+    <a class="tag-navy" href="../index.html#admissions">UPTAC 2026</a>
+    <a class="tag-orange" href="../index.html#admissions">Admissions Open 2026-27</a>
+    <a class="tag-orange" href="../index.html#why-us">NBA Accredited</a>
+    <a class="tag-orange" href="../index.html#placements">Placements</a>
+    <a class="tag-orange" href="../index.html#virtual-tour">Virtual Campus Tour</a>
+    <a class="tag-orange" href="incubation-forum.html">SDCET Incubation Forum</a>
+    <a class="tag-orange" href="../index.html#contact">Contact Us</a>
+  </div>
+</div>
+
+<header class="main-nav">
+  <div class="nav-wrap">
+    <a class="brand" href="../index.html#top">
+      <div class="brand-mark">
+        <img src="../images/logo.png" alt="SDCET logo"
+             onerror="var m=this.closest('.brand-mark'); this.remove(); if(m) m.textContent='SD';">
+      </div>
+      <div class="brand-text">
+        <strong>S.D. College of Engg. &amp; Tech.</strong>
+        <span>Muzaffarnagar &middot; Est. 1997</span>
+      </div>
+    </a>
+    <nav class="primary">
+      <a href="../index.html#top">Home</a>
+      <a href="about.html">About SDCET</a>
+      <a href="../index.html#why-us">Why Us</a>
+      <a href="academics.html" class="mega-trigger" aria-haspopup="true" aria-expanded="false" aria-controls="mega-academics">Academics <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></a>
+      <a href="../index.html#placements">Placements</a>
+      <a href="../index.html#campus">Campus Life</a>
+      <a href="../index.html#contact">Notices</a>
+    </nav>
+    <button class="btn-menu" onclick="toggleMobileNav()" aria-label="Menu" aria-haspopup="true" aria-expanded="false" aria-controls="mobile-panel">
+      <span class="btn-menu-ico">
+        <span></span><span></span><span></span>
+      </span>
+      Menu
+    </button>
+  </div>
+  <div class="nav-overlay" onclick="toggleMobileNav()"></div>
+  <div id="mobile-panel" aria-hidden="true">
+    <div class="mp-head">
+      <div class="mp-brand">
+        <img src="../images/logo.png" alt="" onerror="this.remove()">
+        <span>SDCET<small>Muzaffarnagar</small></span>
+      </div>
+      <button type="button" class="mp-close" onclick="toggleMobileNav()" aria-label="Close menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <div class="mp-links">
+    <a href="../index.html#top">Home</a>
+    <a href="about.html">About SDCET</a>
+    <a href="../index.html#why-us">Why Us</a>
+    <button type="button" class="mp-acc" aria-expanded="false" aria-controls="mp-academics" onclick="toggleMobileAcademics(this)">Academics <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+    <div class="mp-sub" id="mp-academics">
+      <a class="mp-main" href="academics.html#courses">Our Courses</a>
+      <a class="mp-main cal" href="academics.html#calendar">Academic Calendar</a>
+      <span class="mp-label">Departments</span>
+      <a href="department-ai.html" style="--c:#34d399"><b>AI</b>AI Engineering</a>
+      <a href="department-cse.html" style="--c:#22c7b8"><b>CSE</b>Computer Science & Engg.</a>
+      <a href="department-it.html" style="--c:#4f9dff"><b>IT</b>Information Technology</a>
+      <a href="academics.html#dept-ds" style="--c:#a3e635"><b>DS</b>Data Science</a>
+      <a href="department-ece.html" style="--c:#a78bfa"><b>ECE</b>Electronics & Comm. Engg.</a>
+      <a href="academics.html#dept-ee" style="--c:#ffd23f"><b>EE</b>Electrical Engineering</a>
+      <a href="academics.html#dept-me" style="--c:#f5a524"><b>ME</b>Mechanical Engineering</a>
+      <a href="academics.html#dept-ce" style="--c:#b4c78f"><b>CE</b>Civil Engineering</a>
+      <a href="academics.html#dept-mba" style="--c:#7dd3fc"><b>MBA</b>Business Administration</a>
+      <a href="academics.html#dept-ash" style="--c:#cbd5e1"><b>ASH</b>Applied Science & Humanities</a>
+    </div>
+    <a href="../index.html#placements">Placements</a>
+    <a href="../index.html#campus">Campus Life</a>
+    <a href="../index.html#contact">Notices</a>
+    </div>
+    <a class="mp-apply" href="../index.html#admissions">Apply Now
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+  </div>
+  <div class="mega" id="mega-academics" aria-label="Academics menu">
+    <div class="mega-inner">
+      <div class="mega-col">
+        <div class="mega-head"><h4>Departments</h4><span>Choose one to see its programmes</span></div>
+        <div class="mega-depts">
+      <a class="mega-dept" href="department-ai.html" style="--c:#34d399;--cbg:rgba(52,211,153,0.14);--cbd:rgba(52,211,153,0.4)">
+        <span class="md-badge">AI</span>
+        <span class="md-text"><b>AI Engineering</b><small>B.Tech</small></span>
+        <svg class="md-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a class="mega-dept" href="department-cse.html" style="--c:#22c7b8;--cbg:rgba(34,199,184,0.14);--cbd:rgba(34,199,184,0.4)">
+        <span class="md-badge">CSE</span>
+        <span class="md-text"><b>Computer Science & Engg.</b><small>B.Tech · M.Tech · Diploma</small></span>
+        <svg class="md-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a class="mega-dept" href="department-it.html" style="--c:#4f9dff;--cbg:rgba(79,157,255,0.14);--cbd:rgba(79,157,255,0.4)">
+        <span class="md-badge">IT</span>
+        <span class="md-text"><b>Information Technology</b><small>B.Tech</small></span>
+        <svg class="md-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a class="mega-dept" href="academics.html#dept-ds" style="--c:#a3e635;--cbg:rgba(163,230,53,0.14);--cbd:rgba(163,230,53,0.4)">
+        <span class="md-badge">DS</span>
+        <span class="md-text"><b>Data Science</b><small>B.Tech</small></span>
+        <svg class="md-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a class="mega-dept" href="department-ece.html" style="--c:#a78bfa;--cbg:rgba(167,139,250,0.14);--cbd:rgba(167,139,250,0.4)">
+        <span class="md-badge">ECE</span>
+        <span class="md-text"><b>Electronics & Comm. Engg.</b><small>B.Tech</small></span>
+        <svg class="md-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a class="mega-dept" href="academics.html#dept-ee" style="--c:#ffd23f;--cbg:rgba(255,210,63,0.14);--cbd:rgba(255,210,63,0.4)">
+        <span class="md-badge">EE</span>
+        <span class="md-text"><b>Electrical Engineering</b><small>B.Tech · Diploma</small></span>
+        <svg class="md-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a class="mega-dept" href="academics.html#dept-me" style="--c:#f5a524;--cbg:rgba(245,165,36,0.14);--cbd:rgba(245,165,36,0.4)">
+        <span class="md-badge">ME</span>
+        <span class="md-text"><b>Mechanical Engineering</b><small>B.Tech · Diploma</small></span>
+        <svg class="md-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a class="mega-dept" href="academics.html#dept-ce" style="--c:#b4c78f;--cbg:rgba(180,199,143,0.14);--cbd:rgba(180,199,143,0.4)">
+        <span class="md-badge">CE</span>
+        <span class="md-text"><b>Civil Engineering</b><small>B.Tech · Diploma</small></span>
+        <svg class="md-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a class="mega-dept" href="academics.html#dept-mba" style="--c:#7dd3fc;--cbg:rgba(125,211,252,0.14);--cbd:rgba(125,211,252,0.4)">
+        <span class="md-badge">MBA</span>
+        <span class="md-text"><b>Business Administration</b><small>MBA</small></span>
+        <svg class="md-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a class="mega-dept" href="academics.html#dept-ash" style="--c:#cbd5e1;--cbg:rgba(203,213,225,0.14);--cbd:rgba(203,213,225,0.4)">
+        <span class="md-badge">ASH</span>
+        <span class="md-text"><b>Applied Science & Humanities</b><small>First-year foundation</small></span>
+        <svg class="md-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+        </div>
+      </div>
+      <div class="mega-side">
+        <a class="mega-feature" href="academics.html#courses">
+          <img src="../images/academics/campus-sm.jpg" alt="" loading="lazy" onerror="this.remove()">
+          <span class="mf-go"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          <span class="mf-body"><b>Our Courses</b><span>B.Tech, M.Tech, MBA &amp; Diploma</span></span>
+        </a>
+        <div class="mega-chips">
+          <a href="academics.html#btech">B.Tech</a>
+          <a href="academics.html#mtech">M.Tech</a>
+          <a href="academics.html#mba">MBA</a>
+          <a href="academics.html#diploma">Diploma</a>
+        </div>
+        <a class="mega-cal" href="academics.html#calendar">
+          <span class="mc-ico"><svg viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg></span>
+          <span><b>Academic Calendar</b><small>Session dates &amp; schedule</small></span>
+          <svg class="md-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ================= SUB-NAV ================= -->
+  <nav class="dept-subnav" aria-label="Department sections">
+    <div class="wrap dept-subnav-inner">
+      <a href="#overview" class="on">Overview</a>
+      <a href="#vision-mission">Vision &amp; Mission</a>
+      <a href="#outcomes">PEOs, POs &amp; PSOs</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#research">Research</a>
+      <a href="#faculty">Faculty</a>
+      <a href="#labs">Labs</a>
+      <a href="#alumni">Alumni</a>
+      <a href="#admissions">Admissions</a>
+    </div>
+  </nav>
+
+  <!-- ================= HERO / BREADCRUMB ================= -->
+  <section class="dept-hero">
+    <div class="wrap">
+      <div class="dept-crumb"><span>Department</span><span class="sep">&raquo;</span><span class="cur">Civil Engineering</span></div>
+      <div class="dept-crumb-line"></div>
+    </div>
+  </section>
+
+  <!-- ================= INTRO ================= -->
+  <section class="dept-intro fade-in-up" id="overview">
+    <div class="wrap dept-intro-grid no-hod">
+      <div class="dept-intro-copy">
+        <h2 class="dept-h2 dept-name-heading">Civil Engineering</h2>
+        <p>The Department of Civil Engineering nurtures competent civil engineers through education, research, and an interdisciplinary environment, contributing to society through innovation, entrepreneurship, and leadership for sustainable infrastructure and solutions to global challenges.</p>
+        <p>The department works to equip students for the global market and for higher education, encouraging them to contribute to academics, research and the solving of social issues, while developing leadership qualities and professional ethics towards social obligations.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= WHY CHOOSE US ================= -->
+  <section class="dept-why fade-in-up">
+    <div class="wrap">
+      <h2 class="dept-h2">Why Choose Us</h2>
+      <div class="dept-why-grid">
+        <div class="dept-why-card"><div class="dept-why-ico">01</div><div><h4>Quality Education for Global Careers</h4><p>To impart quality education and nurture the students for the global market and equip them for the pursuit of higher education.</p></div></div>
+        <div class="dept-why-card"><div class="dept-why-ico">02</div><div><h4>Research &amp; Social Impact</h4><p>To encourage students to contribute towards academics, research and solving social issues.</p></div></div>
+        <div class="dept-why-card"><div class="dept-why-ico">03</div><div><h4>Leadership &amp; Professional Ethics</h4><p>To develop leadership qualities and professional ethics in students towards social obligations.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= VISION & MISSION ================= -->
+  <section class="dept-vm fade-in-up" id="vision-mission">
+    <div class="wrap">
+      <div class="dept-vm-grid">
+        <div class="dept-vm-card">
+          <h3>Our Vision</h3>
+          <p>To nurture competent Civil Engineers in education, research, and in interdisciplinary environment contributing to society through innovations, entrepreneurship, and leadership for sustainable infrastructure and solutions to global challenges.</p>
+        </div>
+        <div class="dept-vm-card mission">
+          <h3>Our Mission</h3>
+          <ul>
+            <li>To impart quality education and nurture the students for the global market and equip them for the pursuit of higher education.</li>
+            <li>To encourage students to contribute towards academics, research and solving social issues.</li>
+            <li>To develop leadership qualities and professional ethics in students towards social obligations.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PEOs, POs, PSOs ================= -->
+  <section class="dept-outcomes fade-in-up" id="outcomes">
+    <div class="wrap">
+      <h2 class="dept-h2">PEOs, POs and PSOs</h2>
+      <div class="dept-accordion">
+
+        <div class="dept-acc-item open">
+          <button class="dept-acc-btn" aria-expanded="true">Program Educational Objectives (PEO) of CE Department
+            <svg class="dept-acc-chev" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="dept-acc-panel">
+            <div class="dept-acc-inner">
+              <p><b>PEO1 :</b> Excel in their knowledge in science, mathematics and engineering for higher studies, research, and employability.</p>
+              <p><b>PEO2 :</b> Exhibit professionalism through soft, analytical and managerial skills, to produce industry-ready engineers to solve multi-disciplinary sustainable projects.</p>
+              <p><b>PEO3 :</b> Adapt innovative ideas to improve the technical competency in engineering decisions and sustained growth to exhibit social responsibility and professional ethics.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="dept-acc-item">
+          <button class="dept-acc-btn" aria-expanded="false">Program outcomes (PO) of CE Department
+            <svg class="dept-acc-chev" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="dept-acc-panel">
+            <div class="dept-acc-inner">
+              <p class="lead">Engineering Graduates will be able to</p>
+              <p><b>PO1 : Engineering Knowledge:</b> Apply knowledge of mathematics, natural science, computing, engineering fundamentals and an engineering specialization to develop the solution of complex engineering problems.</p>
+              <p><b>PO2 : Problem Analysis:</b> Identify, formulate, review research literature and analyze complex engineering problems reaching substantiated conclusions with consideration for sustainable development.</p>
+              <p><b>PO3 : Design/Development of Solutions:</b> Design creative solutions for complex engineering problems and design/develop systems/components/processes to meet identified needs with consideration for public health and safety, whole-life cost, net zero carbon, culture, society and environment as required.</p>
+              <p><b>PO4 : Conduct Investigations of Complex Problems:</b> Conduct investigations of complex engineering problems using research-based knowledge including design of experiments, modelling, analysis &amp; interpretation of data to provide valid conclusions.</p>
+              <p><b>PO5 : Engineering Tool Usage:</b> Create, select and apply appropriate techniques, resources and modern engineering &amp; IT tools, including prediction and modelling, recognizing their limitations to solve complex engineering problems.</p>
+              <p><b>PO6 : The Engineer and The World:</b> Analyze and evaluate societal and environmental aspects while solving complex engineering problems for its impact on sustainability with reference to economy, health, safety, legal framework, culture and environment.</p>
+              <p><b>PO7 : Ethics:</b> Apply ethical principles and commit to professional ethics, human values, diversity and inclusion; adhere to national &amp; international laws.</p>
+              <p><b>PO8 : Individual and Collaborative Team Work:</b> Function effectively as an individual, and as a member or leader in diverse/multi-disciplinary teams.</p>
+              <p><b>PO9 : Communication:</b> Communicate effectively and inclusively within the engineering community and society at large, such as being able to comprehend and write effective reports and design documentation, make effective presentations considering cultural, language, and learning differences.</p>
+              <p><b>PO10 : Project Management and Finance:</b> Apply knowledge and understanding of engineering management principles and economic decision-making and apply these to one&rsquo;s own work, as a member and leader in a team, and to manage projects in multidisciplinary environments.</p>
+              <p><b>PO11 : Life-Long Learning:</b> Recognize the need for, and have the preparation and ability for independent and life-long learning, adaptability to new and emerging technologies, and critical thinking in the broadest context of technological change.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="dept-acc-item">
+          <button class="dept-acc-btn" aria-expanded="false">Program Specific outcomes (PSO) of CE Department
+            <svg class="dept-acc-chev" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="dept-acc-panel">
+            <div class="dept-acc-inner">
+              <p class="lead">Engineering Graduates will be able to</p>
+              <p><b>PSO1 :</b> Understand the basics of science, mechanics and engineering materials required for Civil Engineering.</p>
+              <p><b>PSO2 :</b> Plan, analyse, design and estimate the structures including substructures and superstructures to provide sustainable solutions to civil engineering problems.</p>
+              <p><b>PSO3 :</b> Develop professional skills required for field projects, multidisciplinary and collaborative works.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="dept-copo">
+        <span class="dept-copo-label">Mapping</span>
+        <div class="dept-soon-card">
+          <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+          <h4>CO&ndash;PO &amp; CO&ndash;PSO Mapping</h4>
+          <p>Course-wise CO&ndash;PO and CO&ndash;PSO mapping matrices are maintained by the department and will be published here shortly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ACHIEVEMENTS ================= -->
+  <section class="dept-achievements fade-in-up" id="achievements">
+    <div class="wrap">
+      <h2 class="dept-h2">Achievements</h2>
+      <div class="dept-soon-card">
+        <svg viewBox="0 0 24 24"><path d="M12 15a6 6 0 1 0 0-12 6 6 0 0 0 0 12Z"/><path d="M8.5 13.5 7 22l5-3 5 3-1.5-8.5"/></svg>
+        <h4>Department Achievements</h4>
+        <p>Awards, recognitions and notable accomplishments of the Civil Engineering department will be updated here soon.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= RESEARCH & PATENTS ================= -->
+  <section class="dept-research fade-in-up" id="research">
+    <div class="wrap">
+      <h2 class="dept-h2">Research Papers &amp; Patents</h2>
+      <div class="dept-soon-card">
+        <svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/></svg>
+        <h4>Faculty &amp; Student Publications</h4>
+        <p>Research papers, journal publications and patents filed by the Civil Engineering department will be listed here soon.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FACULTY ================= -->
+  <section class="dept-faculty fade-in-up" id="faculty">
+    <div class="wrap">
+      <h2 class="dept-h2">Faculty</h2>
+      <div class="dept-soon-card">
+        <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"/><circle cx="10" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        <h4>Faculty Profiles</h4>
+        <p>Detailed faculty list with designation, qualification and experience for the Civil Engineering department will be added here soon.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= LABS ================= -->
+  <section class="dept-labs fade-in-up" id="labs">
+    <div class="wrap">
+      <h2 class="dept-h2">Labs</h2>
+      <p class="dept-labs-note">Civil Engineering labs support practical learning in surveying, structural analysis and construction materials, building a strong foundation for field and design work.</p>
+    </div>
+  </section>
+
+  <!-- ================= ALUMNI ================= -->
+  <section class="dept-alumni fade-in-up" id="alumni">
+    <div class="wrap">
+      <h2 class="dept-h2">Notable Alumni</h2>
+      <div class="dept-soon-card">
+        <svg viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5-10-5Z"/><path d="M6 12v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/></svg>
+        <h4>Our Alumni</h4>
+        <p>Notable alumni of the Civil Engineering department and their achievements will be featured here soon.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ADMISSIONS ================= -->
+  <section class="dept-admissions fade-in-up" id="admissions">
+    <div class="wrap">
+      <h2 class="dept-h2">Admission Procedure &amp; Seat Intake</h2>
+      <div class="dept-admissions-grid">
+        <div class="dept-adm-steps">
+          <div class="dept-adm-step"><span class="n">1</span><div class="t"><h5>Apply through UPTAC / AKTU</h5><p>First-year admission is through UPTAC counselling based on the qualifying entrance exam; lateral entry follows AKTU&rsquo;s direct-admission norms.</p></div></div>
+          <div class="dept-adm-step"><span class="n">2</span><div class="t"><h5>Document Verification</h5><p>Submit academic records and category certificates (if applicable) for verification at the counselling centre or admission office.</p></div></div>
+          <div class="dept-adm-step"><span class="n">3</span><div class="t"><h5>Seat Allotment &amp; Fee Payment</h5><p>On seat allotment, confirm admission by paying the prescribed fee within the schedule issued by UPTAC / AKTU.</p></div></div>
+          <div class="dept-adm-step"><span class="n">4</span><div class="t"><h5>Reporting at SDCET</h5><p>Report to the department with original documents for final admission confirmation, ID card and orientation.</p></div></div>
+        </div>
+        <div class="dept-seats-card">
+          <h4>Seat Intake</h4>
+          <p>As per AICTE&rsquo;s Extension of Approval (EoA) for 2026-27, the sanctioned intake for B.Tech Civil Engineering is <b>30 seats</b>.</p>
+          <div class="dept-adm-note">Category-wise reservation follows the Uttar Pradesh Government / UPTAC counselling norms.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FAQ ================= -->
+  <section class="dept-faq fade-in-up">
+    <div class="wrap">
+      <h2 class="dept-h2">Frequently Asked Questions</h2>
+      <div class="dept-faq-list">
+        <div class="faq-item">
+          <button class="faq-btn" aria-expanded="false"><span>What is the eligibility for B.Tech Civil Engineering?</span><span class="faq-plus"><svg viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14"/></svg></span></button>
+          <div class="faq-panel"><div class="faq-inner"><p>Candidates must have passed 10+2 with Physics, Chemistry and Mathematics, and secure admission through UPTAC counselling or as per AKTU&rsquo;s direct-admission norms.</p></div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-btn" aria-expanded="false"><span>What is the duration of the programme?</span><span class="faq-plus"><svg viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14"/></svg></span></button>
+          <div class="faq-panel"><div class="faq-inner"><p>It is a 4-year programme spread across 8 semesters, affiliated to Dr. A.P.J. Abdul Kalam Technical University (AKTU), Lucknow.</p></div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-btn" aria-expanded="false"><span>What is the current seat intake?</span><span class="faq-plus"><svg viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14"/></svg></span></button>
+          <div class="faq-panel"><div class="faq-inner"><p>30 seats, as sanctioned by AICTE for the 2026-27 academic year.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CTA ================= -->
+  <section class="dept-cta fade-in-up">
+    <div class="wrap">
+      <div class="dept-cta-box">
+        <h3>Interested in Civil Engineering?</h3>
+        <p>Talk to our admission office for eligibility, fees and seat availability.</p>
+        <div class="dept-cta-actions">
+          <a class="primary" href="../index.html#admissions">Admission Enquiry</a>
+          <a class="ghost" href="academics.html">Back to Courses</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+
+    <div class="footer-cols footer-row">
+      <div>
+        <h4>About SDCET</h4>
+        <ul>
+          <li><a href="about.html#overview">Overview</a></li>
+          <li><a href="about.html#vision-mission">Leadership Message</a></li>
+          <li><a href="about.html#managed-by">Management Committee</a></li>
+          <li><a href="committees.html">Institute Committees</a></li>
+          <li><a href="iqac.html">IQAC</a></li>
+          <li><a href="about.html">Mandatory Disclosure</a></li>
+          <li><a href="about.html#overview">Affiliations</a></li>
+          <li><a href="about.html#overview">Approvals</a></li>
+          <li><a href="about.html#code-of-conduct">Code of Conduct</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Infrastructure</h4>
+        <ul>
+          <li><a href="../index.html#campus">Classroom</a></li>
+          <li><a href="../index.html#campus">Labs</a></li>
+          <li><a href="../index.html#campus">Library</a></li>
+          <li><a href="../index.html#campus">Auditorium / Seminar Hall</a></li>
+          <li><a href="../index.html#campus">Hostel</a></li>
+          <li><a href="../index.html#campus">Sports</a></li>
+          <li><a href="../index.html#campus">Canteen</a></li>
+          <li><a href="../index.html#campus">Medical Facilities</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Academics</h4>
+        <ul>
+          <li><a href="academic-calendar.html">Academic Calendar</a></li>
+          <li><a href="../index.html#programs">Faculty</a></li>
+          <li><a href="../index.html#programs">Examinations</a></li>
+          <li><a href="../index.html#contact">All Notices</a></li>
+          <li><a href="../index.html#programs">Syllabus</a></li>
+          <li><a href="../index.html#contact">Circulars</a></li>
+          <li><a href="clubs.html">Clubs</a></li>
+          <li><a href="../index.html#programs">Results</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Admission</h4>
+        <ul>
+          <li><a href="../index.html#admissions">Overview</a></li>
+          <li><a href="../index.html#programs">Courses</a></li>
+          <li><a href="../index.html#admissions">Hostel Fee</a></li>
+          <li><a href="../index.html#admissions">Eligibility Criteria</a></li>
+          <li><a href="../index.html#admissions">Payment Procedure</a></li>
+          <li><a href="../index.html#admissions">Documents</a></li>
+          <li><a href="../index.html#admissions">FAQs</a></li>
+          <li><a href="../index.html#admissions">Lateral Entry</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Courses</h4>
+        <ul>
+          <li><a class="strong-link" href="../index.html#placements">Placements</a></li>
+          <li><a class="strong-link" href="../index.html#contact">Happenings</a></li>
+          <li><a class="strong-link" href="../index.html#placements">Testimonials</a></li>
+          <li><a class="strong-link" href="../index.html#contact">Careers</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-cols footer-row">
+      <div>
+        <h4>Research &amp; Innovation</h4>
+        <ul>
+          <li><a href="../index.html#why-us">Overview</a></li>
+          <li><a href="../index.html#why-us">Recent Innovations</a></li>
+          <li><a href="../index.html#why-us">Publications</a></li>
+          <li><a href="../index.html#why-us">Projects</a></li>
+          <li><a href="../index.html#campus">Labs</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Student Corner</h4>
+        <ul>
+          <li><a href="../index.html#contact">Anti Ragging Cell</a></li>
+          <li><a href="../index.html#contact">Student Discipline Policy</a></li>
+          <li><a href="../index.html#contact">Value Education</a></li>
+          <li><a href="../index.html#contact">Resources</a></li>
+          <li><a href="../index.html#campus">Library</a></li>
+          <li><a href="../index.html#contact">Women Grievance Cell</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="../index.html#why-us">AICTE</a></li>
+          <li><a href="../index.html#why-us">AKTU</a></li>
+          <li><a href="../index.html#why-us">NBA</a></li>
+          <li><a href="../index.html#contact">IIC</a></li>
+          <li><a href="iqac.html">IQAC</a></li>
+          <li><a href="../index.html#contact">e-Newsletter</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Other Links</h4>
+        <ul>
+          <li><a href="../index.html#top">Sitemap</a></li>
+          <li><a href="../index.html#contact">Disclaimer</a></li>
+          <li><a href="alumni.html">Alumni</a></li>
+          <li><a href="../index.html#contact">Privacy Policy</a></li>
+          <li><a href="../index.html#contact">Student Login</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="foot-contact">
+          <ul>
+            <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2Z"/></svg></span> 9258256931-38</li>
+            <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg></span> info@sdcetmzn.org</li>
+            <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21c-4-3.5-8-7.5-8-12a8 8 0 0 1 16 0c0 4.5-4 8.5-8 12Z"/><circle cx="12" cy="9" r="2.5"/></svg></span> Jansath Road, Muzaffarnagar, Uttar Pradesh 251002</li>
+          </ul>
+        </div>
+        <div class="foot-follow">
+          <h4>Follow Us</h4>
+          <div class="social-row">
+            <a href="../index.html#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 9h3V6h-3a3 3 0 0 0-3 3v2H9v3h2v6h3v-6h3l1-3h-4v-2a1 1 0 0 1 1-1Z"/></svg></a>
+            <a href="../index.html#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+            <a href="../index.html#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="6" width="20" height="12" rx="3"/><path d="m10 9 5 3-5 3V9Z"/></svg></a>
+            <a href="../index.html#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 10v7M7 7v.01M11 17v-4a2 2 0 0 1 4 0v4M11 13v4"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-top">
+      <div>
+        <h3>Subscribe Newsletter</h3>
+        <p>Notices, events and admission alerts &mdash; straight to your inbox.</p>
+      </div>
+      <form class="newsletter" onsubmit="return false;">
+        <input type="email" placeholder="Enter your email" id="newsletter-email">
+        <button type="submit" class="btn btn-primary">Subscribe &rarr;</button>
+      </form>
+    </div>
+
+    <div class="foot-bottom">
+      <div class="foot-bottom-copy">
+        <span>&copy; 2026 S.D. College of Engineering &amp; Technology, Muzaffarnagar. All rights reserved.</span>
+      </div>
+      <div class="foot-bottom-copy" style="text-align:right;">
+        <span>Website design &amp; development by <a href="../index.html#">TechMNHub</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="floating-widgets">
+  <a class="side-qa-whatsapp" href="https://wa.me/919258256931?text=Hi%2C%20I%20want%20to%20know%20about%20admission%202026-27" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.36 2 11.7c0 1.98.6 3.82 1.63 5.36L2 22l5.13-1.56A10.2 10.2 0 0 0 12 21.4c5.52 0 10-4.36 10-9.7S17.52 2 12 2Zm5.47 12.38c-.28-.14-1.67-.82-1.93-.92-.26-.1-.45-.14-.64.14-.19.28-.74.92-.9 1.1-.17.19-.33.21-.61.07-.28-.14-1.18-.43-2.24-1.38-.83-.74-1.39-1.65-1.55-1.93-.16-.28-.02-.43.12-.57.13-.13.28-.33.42-.5.14-.16.19-.28.28-.47.1-.19.05-.35-.02-.5-.07-.14-.64-1.54-.88-2.11-.23-.55-.47-.48-.64-.49-.17-.01-.35-.01-.54-.01-.19 0-.5.07-.76.35-.26.28-1 1-1 2.42 0 1.43 1.02 2.81 1.17 3 .14.19 2 3.06 4.85 4.29.68.29 1.21.47 1.62.6.68.22 1.3.19 1.79.11.55-.08 1.67-.68 1.9-1.34.24-.66.24-1.22.17-1.34-.07-.12-.26-.19-.54-.33Z"/></svg>
+  </a>
+  <a class="side-qa-admission" href="../index.html#admissions">Register For Admission 2026-27</a>
+</div>
+
+<!-- Floating chatbot button — placeholder for now. Wire this up to your
+     actual chatbot widget later (Tawk.to / Crisp / a custom bot / etc.):
+     replace the onclick with that widget's open() call. -->
+<button class="chatbot-fab" onclick="alert('Chatbot coming soon! Wire this button up to your chat widget.')" aria-label="Chat with us">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5Z"/></svg>
+</button>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

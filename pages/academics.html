@@ -1,0 +1,652 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Courses &amp; Departments | S.D. College of Engineering &amp; Technology, Muzaffarnagar</title>
+<meta name="description" content="B.Tech, M.Tech, MBA and Diploma programmes and departments at S.D. College of Engineering &amp; Technology, Muzaffarnagar.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600;700&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="icon" href="../images/logo.png">
+</head>
+<body>
+
+<div class="utility-bar">
+  <div class="utility-row">
+    <a class="tag-navy" href="../index.html#admissions">UPTAC 2026</a>
+    <a class="tag-orange" href="../index.html#admissions">Admissions Open 2026-27</a>
+    <a class="tag-orange" href="../index.html#why-us">NBA Accredited</a>
+    <a class="tag-orange" href="../index.html#placements">Placements</a>
+    <a class="tag-orange" href="../index.html#virtual-tour">Virtual Campus Tour</a>
+    <a class="tag-orange" href="incubation-forum.html">SDCET Incubation Forum</a>
+    <a class="tag-orange" href="../index.html#contact">Contact Us</a>
+  </div>
+</div>
+
+<header class="main-nav">
+  <div class="nav-wrap">
+    <a class="brand" href="../index.html#top">
+      <div class="brand-mark">
+        <img src="../images/logo.png" alt="SDCET logo"
+             onerror="var m=this.closest('.brand-mark'); this.remove(); if(m) m.textContent='SD';">
+      </div>
+      <div class="brand-text">
+        <strong>S.D. College of Engg. &amp; Tech.</strong>
+        <span>Muzaffarnagar &middot; Est. 1997</span>
+      </div>
+    </a>
+    <nav class="primary">
+      <a href="../index.html#top">Home</a>
+      <a href="about.html">About SDCET</a>
+      <a href="../index.html#why-us">Why Us</a>
+      <a href="academics.html" class="mega-trigger is-current" aria-current="page" aria-haspopup="true" aria-expanded="false" aria-controls="mega-academics">Academics <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></a>
+      <a href="../index.html#placements">Placements</a>
+      <a href="../index.html#campus">Campus Life</a>
+      <a href="../index.html#contact">Notices</a>
+    </nav>
+    <button class="btn-menu" onclick="toggleMobileNav()" aria-label="Menu" aria-haspopup="true" aria-expanded="false" aria-controls="mobile-panel">
+      <span class="btn-menu-ico">
+        <span></span><span></span><span></span>
+      </span>
+      Menu
+    </button>
+  </div>
+  <div class="nav-overlay" onclick="toggleMobileNav()"></div>
+  <div id="mobile-panel" aria-hidden="true">
+    <div class="mp-head">
+      <div class="mp-brand">
+        <img src="../images/logo.png" alt="" onerror="this.remove()">
+        <span>SDCET<small>Muzaffarnagar</small></span>
+      </div>
+      <button type="button" class="mp-close" onclick="toggleMobileNav()" aria-label="Close menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <div class="mp-links">
+    <a href="../index.html#top">Home</a>
+    <a href="about.html">About SDCET</a>
+    <a href="../index.html#why-us">Why Us</a>
+    <button type="button" class="mp-acc" aria-expanded="false" aria-controls="mp-academics" onclick="toggleMobileAcademics(this)">Academics <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+    <div class="mp-sub" id="mp-academics">
+      <a class="mp-main" href="academics.html#courses">Our Courses</a>
+      <a class="mp-main cal" href="academics.html#calendar">Academic Calendar</a>
+      <span class="mp-label">Departments</span>
+      <a href="department-ai.html" style="--c:#34d399"><b>AI</b>AI Engineering</a>
+      <a href="department-cse.html" style="--c:#22c7b8"><b>CSE</b>Computer Science & Engg.</a>
+      <a href="department-it.html" style="--c:#4f9dff"><b>IT</b>Information Technology</a>
+      <a href="academics.html#dept-ds" style="--c:#a3e635"><b>DS</b>Data Science</a>
+      <a href="department-ece.html" style="--c:#a78bfa"><b>ECE</b>Electronics & Comm. Engg.</a>
+      <a href="academics.html#dept-ee" style="--c:#ffd23f"><b>EE</b>Electrical Engineering</a>
+      <a href="academics.html#dept-me" style="--c:#f5a524"><b>ME</b>Mechanical Engineering</a>
+      <a href="academics.html#dept-ce" style="--c:#b4c78f"><b>CE</b>Civil Engineering</a>
+      <a href="academics.html#dept-mba" style="--c:#7dd3fc"><b>MBA</b>Business Administration</a>
+      <a href="academics.html#dept-ash" style="--c:#cbd5e1"><b>ASH</b>Applied Science & Humanities</a>
+    </div>
+    <a href="../index.html#placements">Placements</a>
+    <a href="../index.html#campus">Campus Life</a>
+    <a href="../index.html#contact">Notices</a>
+    </div>
+    <a class="mp-apply" href="../index.html#admissions">Apply Now
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+  </div>
+  <div class="mega" id="mega-academics" aria-label="Academics menu">
+    <div class="mega-inner">
+      <div class="mega-col">
+        <div class="mega-head"><h4>Departments</h4><span>Choose one to see its programmes</span></div>
+        <div class="mega-depts">
+      <a class="mega-dept" href="department-ai.html" style="--c:#34d399;--cbg:rgba(52,211,153,0.14);--cbd:rgba(52,211,153,0.4)">
+        <span class="md-badge">AI</span>
+        <span class="md-text"><b>AI Engineering</b><small>B.Tech</small></span>
+        <svg class="md-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a class="mega-dept" href="department-cse.html" style="--c:#22c7b8;--cbg:rgba(34,199,184,0.14);--cbd:rgba(34,199,184,0.4)">
+        <span class="md-badge">CSE</span>
+        <span class="md-text"><b>Computer Science & Engg.</b><small>B.Tech · M.Tech · Diploma</small></span>
+        <svg class="md-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a class="mega-dept" href="department-it.html" style="--c:#4f9dff;--cbg:rgba(79,157,255,0.14);--cbd:rgba(79,157,255,0.4)">
+        <span class="md-badge">IT</span>
+        <span class="md-text"><b>Information Technology</b><small>B.Tech</small></span>
+        <svg class="md-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a class="mega-dept" href="academics.html#dept-ds" style="--c:#a3e635;--cbg:rgba(163,230,53,0.14);--cbd:rgba(163,230,53,0.4)">
+        <span class="md-badge">DS</span>
+        <span class="md-text"><b>Data Science</b><small>B.Tech</small></span>
+        <svg class="md-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a class="mega-dept" href="department-ece.html" style="--c:#a78bfa;--cbg:rgba(167,139,250,0.14);--cbd:rgba(167,139,250,0.4)">
+        <span class="md-badge">ECE</span>
+        <span class="md-text"><b>Electronics & Comm. Engg.</b><small>B.Tech</small></span>
+        <svg class="md-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a class="mega-dept" href="academics.html#dept-ee" style="--c:#ffd23f;--cbg:rgba(255,210,63,0.14);--cbd:rgba(255,210,63,0.4)">
+        <span class="md-badge">EE</span>
+        <span class="md-text"><b>Electrical Engineering</b><small>B.Tech · Diploma</small></span>
+        <svg class="md-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a class="mega-dept" href="academics.html#dept-me" style="--c:#f5a524;--cbg:rgba(245,165,36,0.14);--cbd:rgba(245,165,36,0.4)">
+        <span class="md-badge">ME</span>
+        <span class="md-text"><b>Mechanical Engineering</b><small>B.Tech · Diploma</small></span>
+        <svg class="md-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a class="mega-dept" href="academics.html#dept-ce" style="--c:#b4c78f;--cbg:rgba(180,199,143,0.14);--cbd:rgba(180,199,143,0.4)">
+        <span class="md-badge">CE</span>
+        <span class="md-text"><b>Civil Engineering</b><small>B.Tech · Diploma</small></span>
+        <svg class="md-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a class="mega-dept" href="academics.html#dept-mba" style="--c:#7dd3fc;--cbg:rgba(125,211,252,0.14);--cbd:rgba(125,211,252,0.4)">
+        <span class="md-badge">MBA</span>
+        <span class="md-text"><b>Business Administration</b><small>MBA</small></span>
+        <svg class="md-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a class="mega-dept" href="academics.html#dept-ash" style="--c:#cbd5e1;--cbg:rgba(203,213,225,0.14);--cbd:rgba(203,213,225,0.4)">
+        <span class="md-badge">ASH</span>
+        <span class="md-text"><b>Applied Science & Humanities</b><small>First-year foundation</small></span>
+        <svg class="md-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+        </div>
+      </div>
+      <div class="mega-side">
+        <a class="mega-feature" href="academics.html#courses">
+          <img src="../images/academics/campus-sm.jpg" alt="" loading="lazy" onerror="this.remove()">
+          <span class="mf-go"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          <span class="mf-body"><b>Our Courses</b><span>B.Tech, M.Tech, MBA &amp; Diploma</span></span>
+        </a>
+        <div class="mega-chips">
+          <a href="academics.html#btech">B.Tech</a>
+          <a href="academics.html#mtech">M.Tech</a>
+          <a href="academics.html#mba">MBA</a>
+          <a href="academics.html#diploma">Diploma</a>
+        </div>
+        <a class="mega-cal" href="academics.html#calendar">
+          <span class="mc-ico"><svg viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg></span>
+          <span><b>Academic Calendar</b><small>Session dates &amp; schedule</small></span>
+          <svg class="md-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ================= HERO ================= -->
+  <section class="ac-hero">
+    <div class="wrap">
+      <nav class="ac-crumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a><span>/</span><a href="#courses">Academics</a><span>/</span><span>Our Courses</span></nav>
+      <h1>Our <em>Courses</em></h1>
+      <p class="lead">Undergraduate, postgraduate and diploma programmes at S.D. College of Engineering &amp; Technology, Muzaffarnagar &mdash; pick a course or department to see its details.</p>
+    </div>
+  </section>
+
+  <!-- ================= STATS BAND ================= -->
+  <section class="ac-stats-band">
+    <div class="wrap">
+      <div class="ac-stats-band-grid">
+        <div class="ac-stat-tile"><span class="ac-stat-num" data-count="10">0</span><span class="ac-stat-label">Departments</span></div>
+        <div class="ac-stat-tile"><span class="ac-stat-num" data-count="14">0</span><span class="ac-stat-label">Courses &amp; Programmes</span></div>
+        <div class="ac-stat-tile"><span class="ac-stat-num" data-count="1997">0</span><span class="ac-stat-label">Established</span></div>
+        <div class="ac-stat-tile badge">
+          <span class="ac-stat-ico"><svg viewBox="0 0 24 24"><path d="M5 12.5 10 17l9-10"/></svg></span>
+          <span class="ac-stat-label">NBA Accredited<br>First in the region</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= COURSES ================= -->
+  <section class="ac-body" id="courses" style="scroll-margin-top:calc(var(--nav-h) + 10px);">
+    <div class="wrap ac-layout">
+      <aside class="ac-side">
+        <div class="ac-panel">
+          <div class="ac-panel-head"><svg viewBox="0 0 24 24"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3A4 4 0 0 0 11 18.7l1-1"/></svg>Quick Links</div>
+          <a class="ac-ql" href="#" data-soon="College ERP link will be added soon"><span class="qi"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4M7 9h4M7 12h7"/></svg></span>College ERP<svg class="go" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="ac-ql" href="https://aktu.ac.in/" target="_blank" rel="noopener"><span class="qi"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 3.8 5.6 3.8 9S14.6 18.4 12 21c-2.6-2.6-3.8-5.6-3.8-9S9.4 5.6 12 3z"/></svg></span>University Website<svg class="go" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="ac-ql" href="#" data-soon="E-Brochure will be added soon"><span class="qi"><svg viewBox="0 0 24 24"><path d="M6 3.5h9l3.5 3.5V20.5H6z"/><path d="M14.5 3.5V7.5h4M9 12h6M9 15.5h6"/></svg></span>E-Brochure<svg class="go" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="ac-ql" href="../index.html#admissions"><span class="qi"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/><path d="M8.5 9.5h7M8.5 12.5h4"/></svg></span>Admission Enquiry<svg class="go" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+        <div class="ac-panel">
+          <div class="ac-panel-head"><svg viewBox="0 0 24 24"><path d="M4 12h16M4 6h16M4 18h10"/></svg>Jump to</div>
+          <div class="ac-jump">
+            <a href="#btech">B.Tech</a><a href="#mtech">M.Tech</a><a href="#mba">MBA</a><a href="#diploma">Diploma</a>
+            <a href="#departments">Departments</a><a href="#labs">Labs</a><a href="#calendar">Calendar</a>
+          </div>
+        </div>
+      </aside>
+      <div class="ac-main">
+      <div class="ac-group" id="btech">
+        <div class="ac-group-head"><h2>B.Tech</h2><p>Bachelor of Technology · 4 Years</p></div>
+        <div class="ac-grid">
+        <a class="ac-card" href="#dept-ai" data-dept="ai" data-prog="btech-ai" style="--g1:#231d5c;--g2:#12a39a;--c:#34d399" aria-label="AI Engineering (B.Tech) — view details">
+          <span class="ac-card-media"><img src="../images/academics/courses/ai.jpg" alt="" loading="lazy"></span>
+          <span class="ac-card-tag">B.Tech</span>
+          <h3>AI Engineering</h3>
+          <span class="ac-more">View details <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+        <a class="ac-card" href="#dept-cse" data-dept="cse" data-prog="btech-cse" style="--g1:#0f2c4f;--g2:#0f7a72;--c:#22c7b8" aria-label="Computer Science and Engineering (B.Tech) — view details">
+          <span class="ac-card-media"><img src="../images/academics/courses/cse.jpg" alt="" loading="lazy"></span>
+          <span class="ac-card-tag">B.Tech</span>
+          <h3>Computer Science and Engineering</h3>
+          <span class="ac-more">View details <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+        <a class="ac-card" href="#dept-it" data-dept="it" data-prog="btech-it" style="--g1:#0f2c4f;--g2:#1f5fa8;--c:#4f9dff" aria-label="Information Technology (B.Tech) — view details">
+          <span class="ac-card-media plain"><svg class="" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="6.4" rx="1.6"/><rect x="4" y="13.6" width="16" height="6.4" rx="1.6"/><circle cx="7.6" cy="7.2" r="1"/><circle cx="7.6" cy="16.8" r="1"/><path d="M11 7.2h5M11 16.8h5"/></svg></span>
+          <span class="ac-card-tag">B.Tech</span>
+          <h3>Information Technology</h3>
+          <span class="ac-more">View details <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+        <a class="ac-card" href="#dept-ds" data-dept="ds" data-prog="btech-ds" style="--g1:#0a4f4a;--g2:#3aa76d;--c:#a3e635" aria-label="Data Science (B.Tech) — view details">
+          <span class="ac-card-media"><img src="../images/academics/courses/ds.jpg" alt="" loading="lazy"></span>
+          <span class="ac-card-tag">B.Tech</span>
+          <h3>Data Science</h3>
+          <span class="ac-more">View details <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+        <a class="ac-card" href="#dept-ece" data-dept="ece" data-prog="btech-ece" style="--g1:#2e2a6b;--g2:#6d5bd0;--c:#a78bfa" aria-label="Electronics and Communication Engineering (B.Tech) — view details">
+          <span class="ac-card-media"><img src="../images/academics/courses/ece.jpg" alt="" loading="lazy"></span>
+          <span class="ac-card-tag">B.Tech</span>
+          <h3>Electronics and Communication Engineering</h3>
+          <span class="ac-more">View details <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+        <a class="ac-card" href="#dept-me" data-dept="me" data-prog="btech-me" style="--g1:#5e3a0c;--g2:#cf8618;--c:#f5a524" aria-label="Mechanical Engineering (B.Tech) — view details">
+          <span class="ac-card-media"><img src="../images/academics/courses/me.jpg" alt="" loading="lazy"></span>
+          <span class="ac-card-tag">B.Tech</span>
+          <h3>Mechanical Engineering</h3>
+          <span class="ac-more">View details <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+        <a class="ac-card" href="#dept-ee" data-dept="ee" data-prog="btech-ee" style="--g1:#5c4600;--g2:#c99a14;--c:#ffd23f" aria-label="Electrical Engineering (B.Tech) — view details">
+          <span class="ac-card-media"><img src="../images/academics/courses/ee.jpg" alt="" loading="lazy"></span>
+          <span class="ac-card-tag">B.Tech</span>
+          <h3>Electrical Engineering</h3>
+          <span class="ac-more">View details <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+        <a class="ac-card" href="#dept-ce" data-dept="ce" data-prog="btech-ce" style="--g1:#2f4136;--g2:#7d9468;--c:#b4c78f" aria-label="Civil Engineering (B.Tech) — view details">
+          <span class="ac-card-media plain"><svg class="" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18M7 21V5M7 5h11M7 9l4-4M18 5v6"/><rect x="15.5" y="11" width="5" height="3.4" rx=".6"/></svg></span>
+          <span class="ac-card-tag">B.Tech</span>
+          <h3>Civil Engineering</h3>
+          <span class="ac-more">View details <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+        </div>
+      </div>
+      <div class="ac-group" id="mtech">
+        <div class="ac-group-head"><h2>M.Tech</h2><p>Master of Technology · 2 Years</p></div>
+        <div class="ac-grid">
+        <a class="ac-card" href="#dept-cse" data-dept="cse" data-prog="mtech-cse" style="--g1:#0f2c4f;--g2:#0f7a72;--c:#22c7b8" aria-label="Computer Science Engineering (M.Tech) — view details">
+          <span class="ac-card-media"><img src="../images/academics/courses/cse.jpg" alt="" loading="lazy"></span>
+          <span class="ac-card-tag">M.Tech</span>
+          <h3>Computer Science Engineering</h3>
+          <span class="ac-more">View details <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+        </div>
+      </div>
+      <div class="ac-group" id="mba">
+        <div class="ac-group-head"><h2>Master of Business Administration (MBA)</h2><p>Postgraduate management programme · 2 Years</p></div>
+        <div class="ac-grid">
+        <a class="ac-card" href="#dept-mba" data-dept="mba" data-prog="mba" style="--g1:#123b5a;--g2:#2a8fa8;--c:#7dd3fc" aria-label="MBA (MBA) — view details">
+          <span class="ac-card-media plain"><svg class="" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5.2A1.7 1.7 0 0 1 10.7 3.5h2.6A1.7 1.7 0 0 1 15 5.2V7M3 13h18M11 13v2h2v-2"/></svg></span>
+          <span class="ac-card-tag">MBA</span>
+          <h3>MBA</h3>
+          <span class="ac-more">View details <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+        </div>
+      </div>
+      <div class="ac-group" id="diploma">
+        <div class="ac-group-head"><h2>Diploma</h2><p>Polytechnic programme · 3 Years</p></div>
+        <div class="ac-grid">
+        <a class="ac-card" href="#dept-ce" data-dept="ce" data-prog="dip-ce" style="--g1:#2f4136;--g2:#7d9468;--c:#b4c78f" aria-label="Civil Engg (Diploma) — view details">
+          <span class="ac-card-media plain"><svg class="" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18M7 21V5M7 5h11M7 9l4-4M18 5v6"/><rect x="15.5" y="11" width="5" height="3.4" rx=".6"/></svg></span>
+          <span class="ac-card-tag">Diploma</span>
+          <h3>Civil Engg</h3>
+          <span class="ac-more">View details <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+        <a class="ac-card" href="#dept-cse" data-dept="cse" data-prog="dip-cse" style="--g1:#0f2c4f;--g2:#0f7a72;--c:#22c7b8" aria-label="CSE (Diploma) — view details">
+          <span class="ac-card-media"><img src="../images/academics/courses/cse.jpg" alt="" loading="lazy"></span>
+          <span class="ac-card-tag">Diploma</span>
+          <h3>CSE</h3>
+          <span class="ac-more">View details <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+        <a class="ac-card" href="#dept-ee" data-dept="ee" data-prog="dip-ee" style="--g1:#5c4600;--g2:#c99a14;--c:#ffd23f" aria-label="Electrical Engg. (Diploma) — view details">
+          <span class="ac-card-media"><img src="../images/academics/courses/ee.jpg" alt="" loading="lazy"></span>
+          <span class="ac-card-tag">Diploma</span>
+          <h3>Electrical Engg.</h3>
+          <span class="ac-more">View details <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+        <a class="ac-card" href="#dept-me" data-dept="me" data-prog="dip-me" style="--g1:#5e3a0c;--g2:#cf8618;--c:#f5a524" aria-label="Mechanical Engg. (Production) (Diploma) — view details">
+          <span class="ac-card-media"><img src="../images/academics/courses/me.jpg" alt="" loading="lazy"></span>
+          <span class="ac-card-tag">Diploma</span>
+          <h3>Mechanical Engg. (Production)</h3>
+          <span class="ac-more">View details <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= DEPARTMENTS ================= -->
+  <section class="ac-sec" id="departments" style="background:var(--paper-50);padding-top:60px;">
+    <div class="wrap">
+      <div class="ac-sec-head">
+        <span class="eyebrow">Departments</span>
+        <h2>Explore by department</h2>
+        <p>Every branch has its own department. Select one to see the programmes it runs and what students typically study.</p>
+      </div>
+      <div class="ac-depts">
+        <a class="ac-dept" href="#dept-ai" data-dept="ai" style="--g1:#231d5c;--g2:#12a39a;--c:#34d399">
+          <span class="ad-ico"><svg class="" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="2.6"/><circle cx="5" cy="6" r="1.8"/><circle cx="19" cy="6" r="1.8"/><circle cx="5" cy="18" r="1.8"/><circle cx="19" cy="18" r="1.8"/><path d="M6.4 7.2l3.5 3.4M17.6 7.2l-3.5 3.4M6.4 16.8l3.5-3.4M17.6 16.8l-3.5-3.4"/></svg></span>
+          <span class="ad-text"><b>Artificial Intelligence Engineering</b><small>1 programme &middot; B.Tech</small></span>
+          <svg class="ad-go" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="ac-dept" href="#dept-cse" data-dept="cse" style="--g1:#0f2c4f;--g2:#0f7a72;--c:#22c7b8">
+          <span class="ad-ico"><svg class="" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 8-4 4 4 4M16 8l4 4-4 4M13.5 5l-3 14"/></svg></span>
+          <span class="ad-text"><b>Computer Science & Engineering</b><small>3 programmes &middot; B.Tech · M.Tech · Diploma</small></span>
+          <svg class="ad-go" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="ac-dept" href="#dept-it" data-dept="it" style="--g1:#0f2c4f;--g2:#1f5fa8;--c:#4f9dff">
+          <span class="ad-ico"><svg class="" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="6.4" rx="1.6"/><rect x="4" y="13.6" width="16" height="6.4" rx="1.6"/><circle cx="7.6" cy="7.2" r="1"/><circle cx="7.6" cy="16.8" r="1"/><path d="M11 7.2h5M11 16.8h5"/></svg></span>
+          <span class="ad-text"><b>Information Technology</b><small>1 programme &middot; B.Tech</small></span>
+          <svg class="ad-go" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="ac-dept" href="#dept-ds" data-dept="ds" style="--g1:#0a4f4a;--g2:#3aa76d;--c:#a3e635">
+          <span class="ad-ico"><svg class="" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18"/><rect x="5" y="12" width="3.2" height="9"/><rect x="10.4" y="6" width="3.2" height="15"/><rect x="15.8" y="14" width="3.2" height="7"/></svg></span>
+          <span class="ad-text"><b>Data Science</b><small>1 programme &middot; B.Tech</small></span>
+          <svg class="ad-go" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="ac-dept" href="#dept-ece" data-dept="ece" style="--g1:#2e2a6b;--g2:#6d5bd0;--c:#a78bfa">
+          <span class="ad-ico"><svg class="" viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="7" width="10" height="10" rx="1.6"/><path d="M10 3v4M14 3v4M10 17v4M14 17v4M3 10h4M3 14h4M17 10h4M17 14h4"/></svg></span>
+          <span class="ad-text"><b>Electronics & Communication Engineering</b><small>1 programme &middot; B.Tech</small></span>
+          <svg class="ad-go" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="ac-dept" href="#dept-ee" data-dept="ee" style="--g1:#5c4600;--g2:#c99a14;--c:#ffd23f">
+          <span class="ad-ico"><svg class="" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 2.5 5 13.4h6.2L10.3 21.5l8.7-11.4h-6.2z"/></svg></span>
+          <span class="ad-text"><b>Electrical Engineering</b><small>2 programmes &middot; B.Tech · Diploma</small></span>
+          <svg class="ad-go" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="ac-dept" href="#dept-me" data-dept="me" style="--g1:#5e3a0c;--g2:#cf8618;--c:#f5a524">
+          <span class="ad-ico"><svg class="" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5.2"/><circle cx="12" cy="12" r="1.9"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M18.7 5.3l-2.1 2.1M7.4 16.6l-2.1 2.1"/></svg></span>
+          <span class="ad-text"><b>Mechanical Engineering</b><small>2 programmes &middot; B.Tech · Diploma</small></span>
+          <svg class="ad-go" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="ac-dept" href="#dept-ce" data-dept="ce" style="--g1:#2f4136;--g2:#7d9468;--c:#b4c78f">
+          <span class="ad-ico"><svg class="" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18M7 21V5M7 5h11M7 9l4-4M18 5v6"/><rect x="15.5" y="11" width="5" height="3.4" rx=".6"/></svg></span>
+          <span class="ad-text"><b>Civil Engineering</b><small>2 programmes &middot; B.Tech · Diploma</small></span>
+          <svg class="ad-go" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="ac-dept" href="#dept-mba" data-dept="mba" style="--g1:#123b5a;--g2:#2a8fa8;--c:#7dd3fc">
+          <span class="ad-ico"><svg class="" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5.2A1.7 1.7 0 0 1 10.7 3.5h2.6A1.7 1.7 0 0 1 15 5.2V7M3 13h18M11 13v2h2v-2"/></svg></span>
+          <span class="ad-text"><b>Master of Business Administration</b><small>1 programme &middot; MBA</small></span>
+          <svg class="ad-go" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="ac-dept" href="#dept-ash" data-dept="ash" style="--g1:#334155;--g2:#64748b;--c:#cbd5e1">
+          <span class="ad-ico"><svg class="" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="1.6"/><ellipse cx="12" cy="12" rx="9.5" ry="3.8"/><ellipse cx="12" cy="12" rx="9.5" ry="3.8" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="9.5" ry="3.8" transform="rotate(120 12 12)"/></svg></span>
+          <span class="ad-text"><b>Applied Science & Humanities</b><small>Foundation department &middot; First-year B.Tech</small></span>
+          <svg class="ad-go" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= LABS ================= -->
+  <section class="ac-sec" id="labs" style="padding-top:64px;">
+    <div class="wrap">
+      <div class="ac-sec-head">
+        <span class="eyebrow">Learning spaces</span>
+        <h2>Where practice happens</h2>
+        <p>Bright, spacious computer labs where students write code, run data experiments and build projects hands-on. Tap a photo to view it larger.</p>
+      </div>
+      <div class="ac-labs">
+        <figure class="ac-lab" data-lightbox="labs" data-src="../images/academics/lab-1.jpg" data-caption="Computer Lab">
+          <img src="../images/academics/lab-1.jpg" alt="Computer Lab" loading="lazy">
+          <figcaption>Computer Lab</figcaption>
+        </figure>
+        <figure class="ac-lab" data-lightbox="labs" data-src="../images/academics/lab-2.jpg" data-caption="Students at work in the lab">
+          <img src="../images/academics/lab-2.jpg" alt="Students at work in the lab" loading="lazy">
+          <figcaption>Students at work in the lab</figcaption>
+        </figure>
+        <figure class="ac-lab" data-lightbox="labs" data-src="../images/academics/lab-3.jpg" data-caption="Spacious lab hall">
+          <img src="../images/academics/lab-3.jpg" alt="Spacious lab hall" loading="lazy">
+          <figcaption>Spacious lab hall</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CALENDAR ================= -->
+  <section class="ac-sec" id="calendar" style="padding-top:8px;">
+    <div class="wrap">
+      <div class="ac-cal">
+        <div class="ac-cal-ico"><svg viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4M8 14h2M14 14h2M8 17.5h2"/></svg></div>
+        <div>
+          <span class="ac-soon">Coming soon</span>
+          <h3>Academic Calendar</h3>
+          <p>The session-wise academic calendar &mdash; semester start, exams and holidays &mdash; will be published on this page. Until then, please check the University website or contact the college office.</p>
+        </div>
+        <div class="ac-cal-actions">
+          <a class="btn btn-primary" href="https://aktu.ac.in/" target="_blank" rel="noopener">University Website</a>
+          <a class="btn btn-outline-navy" href="../index.html#contact">Contact Office</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ADMISSION CTA ================= -->
+  <section style="padding-block:0 60px;">
+    <div class="wrap">
+      <div class="cta-band">
+        <div>
+          <span class="eyebrow" style="color:var(--orange-500);">Admissions 2026-27</span>
+          <h2 style="margin-top:6px;">Found your course?</h2>
+          <p>Talk to our admissions team about B.Tech, Diploma, M.Tech and MBA seats.</p>
+        </div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+          <a class="btn btn-primary" href="tel:9258256931">Call 9258256931-38</a>
+          <a class="btn btn-outline-light" href="mailto:info@sdcetmzn.org">Email Admissions</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= DEPARTMENT DETAIL DRAWER ================= -->
+  <div class="ac-drawer" id="ac-drawer" aria-hidden="true">
+    <div class="ac-scrim"></div>
+    <aside class="ac-sheet" role="dialog" aria-modal="true" aria-labelledby="ac-title">
+      <header class="ac-sheet-head">
+        <div class="ac-sheet-bg" aria-hidden="true"></div>
+        <button type="button" class="ac-close" aria-label="Close"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+        <span class="ac-sheet-abbr"></span>
+        <h2 id="ac-title"></h2>
+        <p></p>
+      </header>
+      <div class="ac-sheet-body"></div>
+      <footer class="ac-sheet-foot">
+        <a class="btn btn-primary" href="../index.html#admissions">Admission Enquiry</a>
+        <div class="ac-nav">
+          <button type="button" class="prev" aria-label="Previous department"><svg viewBox="0 0 24 24"><path d="m15 5-7 7 7 7"/></svg></button>
+          <button type="button" class="next" aria-label="Next department"><svg viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></svg></button>
+        </div>
+      </footer>
+    </aside>
+  </div>
+  <div hidden id="ac-icons"><span data-icon="cse"><svg class="" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 8-4 4 4 4M16 8l4 4-4 4M13.5 5l-3 14"/></svg></span><span data-icon="ds"><svg class="" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18"/><rect x="5" y="12" width="3.2" height="9"/><rect x="10.4" y="6" width="3.2" height="15"/><rect x="15.8" y="14" width="3.2" height="7"/></svg></span><span data-icon="ece"><svg class="" viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="7" width="10" height="10" rx="1.6"/><path d="M10 3v4M14 3v4M10 17v4M14 17v4M3 10h4M3 14h4M17 10h4M17 14h4"/></svg></span><span data-icon="me"><svg class="" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5.2"/><circle cx="12" cy="12" r="1.9"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M18.7 5.3l-2.1 2.1M7.4 16.6l-2.1 2.1"/></svg></span><span data-icon="ee"><svg class="" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 2.5 5 13.4h6.2L10.3 21.5l8.7-11.4h-6.2z"/></svg></span><span data-icon="ce"><svg class="" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18M7 21V5M7 5h11M7 9l4-4M18 5v6"/><rect x="15.5" y="11" width="5" height="3.4" rx=".6"/></svg></span><span data-icon="ai"><svg class="" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="2.6"/><circle cx="5" cy="6" r="1.8"/><circle cx="19" cy="6" r="1.8"/><circle cx="5" cy="18" r="1.8"/><circle cx="19" cy="18" r="1.8"/><path d="M6.4 7.2l3.5 3.4M17.6 7.2l-3.5 3.4M6.4 16.8l3.5-3.4M17.6 16.8l-3.5-3.4"/></svg></span><span data-icon="mba"><svg class="" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5.2A1.7 1.7 0 0 1 10.7 3.5h2.6A1.7 1.7 0 0 1 15 5.2V7M3 13h18M11 13v2h2v-2"/></svg></span><span data-icon="ash"><svg class="" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="1.6"/><ellipse cx="12" cy="12" rx="9.5" ry="3.8"/><ellipse cx="12" cy="12" rx="9.5" ry="3.8" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="9.5" ry="3.8" transform="rotate(120 12 12)"/></svg></span><span data-icon="it"><svg class="" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="6.4" rx="1.6"/><rect x="4" y="13.6" width="16" height="6.4" rx="1.6"/><circle cx="7.6" cy="7.2" r="1"/><circle cx="7.6" cy="16.8" r="1"/><path d="M11 7.2h5M11 16.8h5"/></svg></span></div>
+  <div class="ac-toast" id="ac-toast" role="status" aria-live="polite"></div>
+
+  <!-- ================= LIGHTBOX (labs) ================= -->
+  <div class="inc-lightbox" id="inc-lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+    <button type="button" class="lb-btn lb-close" aria-label="Close"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    <button type="button" class="lb-btn lb-prev" aria-label="Previous image"><svg viewBox="0 0 24 24"><path d="m15 5-7 7 7 7"/></svg></button>
+    <figure><img alt=""><figcaption></figcaption></figure>
+    <button type="button" class="lb-btn lb-next" aria-label="Next image"><svg viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></svg></button>
+  </div>
+
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+
+    <div class="footer-cols footer-row">
+      <div>
+        <h4>About SDCET</h4>
+        <ul>
+          <li><a href="about.html#overview">Overview</a></li>
+          <li><a href="about.html#vision-mission">Leadership Message</a></li>
+          <li><a href="about.html#managed-by">Management Committee</a></li>
+          <li><a href="committees.html">Institute Committees</a></li>
+          <li><a href="iqac.html">IQAC</a></li>
+          <li><a href="about.html">Mandatory Disclosure</a></li>
+          <li><a href="about.html#overview">Affiliations</a></li>
+          <li><a href="about.html#overview">Approvals</a></li>
+          <li><a href="about.html">Code of Conduct</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Infrastructure</h4>
+        <ul>
+          <li><a href="../index.html#campus">Classroom</a></li>
+          <li><a href="../index.html#campus">Labs</a></li>
+          <li><a href="../index.html#campus">Library</a></li>
+          <li><a href="../index.html#campus">Auditorium / Seminar Hall</a></li>
+          <li><a href="../index.html#campus">Hostel</a></li>
+          <li><a href="../index.html#campus">Sports</a></li>
+          <li><a href="../index.html#campus">Canteen</a></li>
+          <li><a href="../index.html#campus">Medical Facilities</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Academics</h4>
+        <ul>
+          <li><a href="../index.html#programs">Academic Calendar</a></li>
+          <li><a href="../index.html#programs">Faculty</a></li>
+          <li><a href="../index.html#programs">Examinations</a></li>
+          <li><a href="../index.html#contact">All Notices</a></li>
+          <li><a href="../index.html#programs">Syllabus</a></li>
+          <li><a href="../index.html#contact">Circulars</a></li>
+          <li><a href="clubs.html">Clubs</a></li>
+          <li><a href="../index.html#programs">Results</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Admission</h4>
+        <ul>
+          <li><a href="../index.html#admissions">Overview</a></li>
+          <li><a href="../index.html#programs">Courses</a></li>
+          <li><a href="../index.html#admissions">Hostel Fee</a></li>
+          <li><a href="../index.html#admissions">Eligibility Criteria</a></li>
+          <li><a href="../index.html#admissions">Payment Procedure</a></li>
+          <li><a href="../index.html#admissions">Documents</a></li>
+          <li><a href="../index.html#admissions">FAQs</a></li>
+          <li><a href="../index.html#admissions">Lateral Entry</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Courses</h4>
+        <ul>
+          <li><a class="strong-link" href="../index.html#placements">Placements</a></li>
+          <li><a class="strong-link" href="../index.html#contact">Happenings</a></li>
+          <li><a class="strong-link" href="../index.html#placements">Testimonials</a></li>
+          <li><a class="strong-link" href="../index.html#contact">Careers</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-cols footer-row">
+      <div>
+        <h4>Research &amp; Innovation</h4>
+        <ul>
+          <li><a href="../index.html#why-us">Overview</a></li>
+          <li><a href="../index.html#why-us">Recent Innovations</a></li>
+          <li><a href="../index.html#why-us">Publications</a></li>
+          <li><a href="../index.html#why-us">Projects</a></li>
+          <li><a href="../index.html#campus">Labs</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Student Corner</h4>
+        <ul>
+          <li><a href="../index.html#contact">Anti Ragging Cell</a></li>
+          <li><a href="../index.html#contact">Student Discipline Policy</a></li>
+          <li><a href="../index.html#contact">Value Education</a></li>
+          <li><a href="../index.html#contact">Resources</a></li>
+          <li><a href="../index.html#campus">Library</a></li>
+          <li><a href="../index.html#contact">Women Grievance Cell</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="../index.html#why-us">AICTE</a></li>
+          <li><a href="../index.html#why-us">AKTU</a></li>
+          <li><a href="../index.html#why-us">NBA</a></li>
+          <li><a href="../index.html#contact">IIC</a></li>
+          <li><a href="iqac.html">IQAC</a></li>
+          <li><a href="../index.html#contact">e-Newsletter</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Other Links</h4>
+        <ul>
+          <li><a href="../index.html#top">Sitemap</a></li>
+          <li><a href="../index.html#contact">Disclaimer</a></li>
+          <li><a href="../index.html#contact">Alumni</a></li>
+          <li><a href="../index.html#contact">Privacy Policy</a></li>
+          <li><a href="../index.html#contact">Student Login</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="foot-contact">
+          <ul>
+            <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2Z"/></svg></span> 9258256931-38</li>
+            <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg></span> info@sdcetmzn.org</li>
+            <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21c-4-3.5-8-7.5-8-12a8 8 0 0 1 16 0c0 4.5-4 8.5-8 12Z"/><circle cx="12" cy="9" r="2.5"/></svg></span> Jansath Road, Muzaffarnagar, Uttar Pradesh 251002</li>
+          </ul>
+        </div>
+        <div class="foot-follow">
+          <h4>Follow Us</h4>
+          <div class="social-row">
+            <a href="../index.html#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 9h3V6h-3a3 3 0 0 0-3 3v2H9v3h2v6h3v-6h3l1-3h-4v-2a1 1 0 0 1 1-1Z"/></svg></a>
+            <a href="../index.html#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+            <a href="../index.html#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="6" width="20" height="12" rx="3"/><path d="m10 9 5 3-5 3V9Z"/></svg></a>
+            <a href="../index.html#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 10v7M7 7v.01M11 17v-4a2 2 0 0 1 4 0v4M11 13v4"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-top">
+      <div>
+        <h3>Subscribe Newsletter</h3>
+        <p>Notices, events and admission alerts &mdash; straight to your inbox.</p>
+      </div>
+      <form class="newsletter" onsubmit="return false;">
+        <input type="email" placeholder="Enter your email" id="newsletter-email">
+        <button type="submit" class="btn btn-primary">Subscribe &rarr;</button>
+      </form>
+    </div>
+
+    <div class="foot-bottom">
+      <div class="foot-bottom-copy">
+        <span>&copy; 2026 S.D. College of Engineering &amp; Technology, Muzaffarnagar. All rights reserved.</span>
+      </div>
+      <div class="foot-bottom-copy" style="text-align:right;">
+        <span>Website design &amp; development by <a href="../index.html#">TechMNHub</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="floating-widgets">
+  <a class="side-qa-whatsapp" href="https://wa.me/919258256931?text=Hi%2C%20I%20want%20to%20know%20about%20admission%202026-27" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.36 2 11.7c0 1.98.6 3.82 1.63 5.36L2 22l5.13-1.56A10.2 10.2 0 0 0 12 21.4c5.52 0 10-4.36 10-9.7S17.52 2 12 2Zm5.47 12.38c-.28-.14-1.67-.82-1.93-.92-.26-.1-.45-.14-.64.14-.19.28-.74.92-.9 1.1-.17.19-.33.21-.61.07-.28-.14-1.18-.43-2.24-1.38-.83-.74-1.39-1.65-1.55-1.93-.16-.28-.02-.43.12-.57.13-.13.28-.33.42-.5.14-.16.19-.28.28-.47.1-.19.05-.35-.02-.5-.07-.14-.64-1.54-.88-2.11-.23-.55-.47-.48-.64-.49-.17-.01-.35-.01-.54-.01-.19 0-.5.07-.76.35-.26.28-1 1-1 2.42 0 1.43 1.02 2.81 1.17 3 .14.19 2 3.06 4.85 4.29.68.29 1.21.47 1.62.6.68.22 1.3.19 1.79.11.55-.08 1.67-.68 1.9-1.34.24-.66.24-1.22.17-1.34-.07-.12-.26-.19-.54-.33Z"/></svg>
+  </a>
+  <a class="side-qa-admission" href="../index.html#admissions">Register For Admission 2026-27</a>
+</div>
+
+<!-- Floating chatbot button — placeholder for now. Wire this up to your
+     actual chatbot widget later (Tawk.to / Crisp / a custom bot / etc.):
+     replace the onclick with that widget's open() call. -->
+<button class="chatbot-fab" onclick="alert('Chatbot coming soon! Wire this button up to your chat widget.')" aria-label="Chat with us">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5Z"/></svg>
+</button>
+
+<script src="../js/main.js"></script>
+<script src="../js/academics.js"></script>
+</body>
+</html>

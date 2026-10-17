@@ -1,0 +1,484 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About SDCET | S.D. College of Engineering &amp; Technology, Muzaffarnagar</title>
+<meta name="description" content="About S.D. College of Engineering & Technology, Muzaffarnagar — our history, vision & mission, quality policy and governing body, Sanatan Dharam College Association.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600;700&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="icon" href="../images/logo.png">
+</head>
+<body>
+
+<div class="utility-bar">
+  <div class="utility-row">
+    <a class="tag-navy" href="../index.html#admissions">UPTAC 2026</a>
+    <a class="tag-orange" href="../index.html#admissions">Admissions Open 2026-27</a>
+    <a class="tag-orange" href="../index.html#why-us">NBA Accredited</a>
+    <a class="tag-orange" href="../index.html#placements">Placements</a>
+    <a class="tag-orange" href="../index.html#virtual-tour">Virtual Campus Tour</a>
+    <a class="tag-orange" href="incubation-forum.html">SDCET Incubation Forum</a>
+    <a class="tag-orange" href="../index.html#contact">Contact Us</a>
+  </div>
+</div>
+
+<header class="main-nav">
+  <div class="nav-wrap">
+    <a class="brand" href="../index.html#top">
+      <div class="brand-mark">
+        <img src="../images/logo.png" alt="SDCET logo"
+             onerror="var m=this.closest('.brand-mark'); this.remove(); if(m) m.textContent='SD';">
+      </div>
+      <div class="brand-text">
+        <strong>S.D. College of Engg. &amp; Tech.</strong>
+        <span>Muzaffarnagar &middot; Est. 1997</span>
+      </div>
+    </a>
+    <nav class="primary">
+      <a href="../index.html#top">Home</a>
+      <a href="about.html">About SDCET</a>
+      <a href="../index.html#why-us">Why Us</a>
+      <a href="academics.html" class="mega-trigger" aria-haspopup="true" aria-expanded="false" aria-controls="mega-academics">Academics <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></a>
+      <a href="../index.html#placements">Placements</a>
+      <a href="../index.html#campus">Campus Life</a>
+      <a href="../index.html#contact">Notices</a>
+    </nav>
+    <button class="btn-menu" onclick="toggleMobileNav()" aria-label="Menu" aria-haspopup="true" aria-expanded="false" aria-controls="mobile-panel">
+      <span class="btn-menu-ico">
+        <span></span><span></span><span></span>
+      </span>
+      Menu
+    </button>
+  </div>
+  <div class="nav-overlay" onclick="toggleMobileNav()"></div>
+  <div id="mobile-panel" aria-hidden="true">
+    <div class="mp-head">
+      <div class="mp-brand">
+        <img src="../images/logo.png" alt="" onerror="this.remove()">
+        <span>SDCET<small>Muzaffarnagar</small></span>
+      </div>
+      <button type="button" class="mp-close" onclick="toggleMobileNav()" aria-label="Close menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <div class="mp-links">
+    <a href="../index.html#top">Home</a>
+    <a href="about.html">About SDCET</a>
+    <a href="../index.html#why-us">Why Us</a>
+    <button type="button" class="mp-acc" aria-expanded="false" aria-controls="mp-academics" onclick="toggleMobileAcademics(this)">Academics <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+    <div class="mp-sub" id="mp-academics">
+      <a class="mp-main" href="academics.html#courses">Our Courses</a>
+      <a class="mp-main cal" href="academics.html#calendar">Academic Calendar</a>
+      <span class="mp-label">Departments</span>
+      <a href="department-ai.html" style="--c:#34d399"><b>AI</b>AI Engineering</a>
+      <a href="department-cse.html" style="--c:#22c7b8"><b>CSE</b>Computer Science & Engg.</a>
+      <a href="department-it.html" style="--c:#4f9dff"><b>IT</b>Information Technology</a>
+      <a href="academics.html#dept-ds" style="--c:#a3e635"><b>DS</b>Data Science</a>
+      <a href="department-ece.html" style="--c:#a78bfa"><b>ECE</b>Electronics & Comm. Engg.</a>
+      <a href="academics.html#dept-ee" style="--c:#ffd23f"><b>EE</b>Electrical Engineering</a>
+      <a href="academics.html#dept-me" style="--c:#f5a524"><b>ME</b>Mechanical Engineering</a>
+      <a href="academics.html#dept-ce" style="--c:#b4c78f"><b>CE</b>Civil Engineering</a>
+      <a href="academics.html#dept-mba" style="--c:#7dd3fc"><b>MBA</b>Business Administration</a>
+      <a href="academics.html#dept-ash" style="--c:#cbd5e1"><b>ASH</b>Applied Science & Humanities</a>
+    </div>
+    <a href="../index.html#placements">Placements</a>
+    <a href="../index.html#campus">Campus Life</a>
+    <a href="../index.html#contact">Notices</a>
+    </div>
+    <a class="mp-apply" href="../index.html#admissions">Apply Now
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+  </div>
+  <div class="mega" id="mega-academics" aria-label="Academics menu">
+    <div class="mega-inner">
+      <div class="mega-col">
+        <div class="mega-head"><h4>Departments</h4><span>Choose one to see its programmes</span></div>
+        <div class="mega-depts">
+      <a class="mega-dept" href="department-ai.html" style="--c:#34d399;--cbg:rgba(52,211,153,0.14);--cbd:rgba(52,211,153,0.4)">
+        <span class="md-badge">AI</span>
+        <span class="md-text"><b>AI Engineering</b><small>B.Tech</small></span>
+        <svg class="md-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a class="mega-dept" href="department-cse.html" style="--c:#22c7b8;--cbg:rgba(34,199,184,0.14);--cbd:rgba(34,199,184,0.4)">
+        <span class="md-badge">CSE</span>
+        <span class="md-text"><b>Computer Science & Engg.</b><small>B.Tech · M.Tech · Diploma</small></span>
+        <svg class="md-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a class="mega-dept" href="department-it.html" style="--c:#4f9dff;--cbg:rgba(79,157,255,0.14);--cbd:rgba(79,157,255,0.4)">
+        <span class="md-badge">IT</span>
+        <span class="md-text"><b>Information Technology</b><small>B.Tech</small></span>
+        <svg class="md-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a class="mega-dept" href="academics.html#dept-ds" style="--c:#a3e635;--cbg:rgba(163,230,53,0.14);--cbd:rgba(163,230,53,0.4)">
+        <span class="md-badge">DS</span>
+        <span class="md-text"><b>Data Science</b><small>B.Tech</small></span>
+        <svg class="md-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a class="mega-dept" href="department-ece.html" style="--c:#a78bfa;--cbg:rgba(167,139,250,0.14);--cbd:rgba(167,139,250,0.4)">
+        <span class="md-badge">ECE</span>
+        <span class="md-text"><b>Electronics & Comm. Engg.</b><small>B.Tech</small></span>
+        <svg class="md-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a class="mega-dept" href="academics.html#dept-ee" style="--c:#ffd23f;--cbg:rgba(255,210,63,0.14);--cbd:rgba(255,210,63,0.4)">
+        <span class="md-badge">EE</span>
+        <span class="md-text"><b>Electrical Engineering</b><small>B.Tech · Diploma</small></span>
+        <svg class="md-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a class="mega-dept" href="academics.html#dept-me" style="--c:#f5a524;--cbg:rgba(245,165,36,0.14);--cbd:rgba(245,165,36,0.4)">
+        <span class="md-badge">ME</span>
+        <span class="md-text"><b>Mechanical Engineering</b><small>B.Tech · Diploma</small></span>
+        <svg class="md-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a class="mega-dept" href="academics.html#dept-ce" style="--c:#b4c78f;--cbg:rgba(180,199,143,0.14);--cbd:rgba(180,199,143,0.4)">
+        <span class="md-badge">CE</span>
+        <span class="md-text"><b>Civil Engineering</b><small>B.Tech · Diploma</small></span>
+        <svg class="md-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a class="mega-dept" href="academics.html#dept-mba" style="--c:#7dd3fc;--cbg:rgba(125,211,252,0.14);--cbd:rgba(125,211,252,0.4)">
+        <span class="md-badge">MBA</span>
+        <span class="md-text"><b>Business Administration</b><small>MBA</small></span>
+        <svg class="md-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a class="mega-dept" href="academics.html#dept-ash" style="--c:#cbd5e1;--cbg:rgba(203,213,225,0.14);--cbd:rgba(203,213,225,0.4)">
+        <span class="md-badge">ASH</span>
+        <span class="md-text"><b>Applied Science & Humanities</b><small>First-year foundation</small></span>
+        <svg class="md-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+        </div>
+      </div>
+      <div class="mega-side">
+        <a class="mega-feature" href="academics.html#courses">
+          <img src="../images/academics/campus-sm.jpg" alt="" loading="lazy" onerror="this.remove()">
+          <span class="mf-go"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          <span class="mf-body"><b>Our Courses</b><span>B.Tech, M.Tech, MBA &amp; Diploma</span></span>
+        </a>
+        <div class="mega-chips">
+          <a href="academics.html#btech">B.Tech</a>
+          <a href="academics.html#mtech">M.Tech</a>
+          <a href="academics.html#mba">MBA</a>
+          <a href="academics.html#diploma">Diploma</a>
+        </div>
+        <a class="mega-cal" href="academics.html#calendar">
+          <span class="mc-ico"><svg viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg></span>
+          <span><b>Academic Calendar</b><small>Session dates &amp; schedule</small></span>
+          <svg class="md-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ================= SUB-NAV ================= -->
+  <nav class="about-subnav" aria-label="About SDCET sections">
+    <div class="wrap about-subnav-inner">
+      <a href="#overview" class="on">Overview</a>
+      <a href="#vision-mission">Vision &amp; Mission</a>
+      <a href="#quality-policy">Quality Policy &amp; Objective</a>
+      <a href="#code-of-conduct">Code of Conduct</a>
+      <a href="#managed-by">Managed By</a>
+    </div>
+  </nav>
+
+  <!-- ================= OVERVIEW (hero) ================= -->
+  <section class="about-hero" id="overview">
+    <div class="wrap about-hero-grid">
+      <div class="about-hero-copy">
+        <span class="eyebrow">About SDCET</span>
+        <h1>A distinctive combination of academic excellence &amp; professional ethics</h1>
+        <p>Established in 1997 on Jansath Road, Muzaffarnagar, S.D. College of Engineering &amp; Technology has spent over 25 years building career aspirants into industry-ready engineers and managers. Approved by AICTE and affiliated to Dr. A.P.J. Abdul Kalam Technical University, Lucknow (AKTU code &ndash;083), SDCET was the first NBA-accredited institute in the region &mdash; a distinction that continues to define how the college teaches, mentors, and places its students.</p>
+        <p>Our classrooms carry mentorship from IIT and internationally-qualified professors, backed by a central library, computer centres, and dedicated learning-resource facilities across a lush green campus.</p>
+        <div class="badge-row">
+          <div class="badge-pill"><span class="dot-ico"></span> AICTE Approved</div>
+          <div class="badge-pill"><span class="dot-ico"></span> AKTU Affiliated</div>
+          <div class="badge-pill"><span class="dot-ico"></span> First NBA-Accredited in the Region</div>
+        </div>
+      </div>
+      <div class="about-carousel">
+        <div class="ac-slide is-active" style="background-image:url(../images/hero-1.png)"></div>
+        <div class="ac-slide" style="background-image:url(../images/hero-2.png)"></div>
+        <div class="ac-slide" style="background-image:url(../images/hero-3.png)"></div>
+        <div class="ac-slide" style="background-image:url(../images/academics/lab-1.jpg)"></div>
+        <div class="ac-slide" style="background-image:url(../images/academics/lab-2.jpg)"></div>
+        <div class="ac-carousel-shade"></div>
+        <div class="ac-dots">
+          <span class="on"></span><span></span><span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= VISION & MISSION ================= -->
+  <section id="vision-mission" class="about-section">
+    <div class="wrap">
+      <span class="eyebrow reveal">Vision &amp; Mission</span>
+      <h2 class="reveal">What we stand for</h2>
+      <p class="lede reveal">The principles that guide how SDCET teaches, mentors and prepares every student for a career in engineering and management.</p>
+      <div class="vm-grid">
+        <div class="vm-card vision reveal">
+          <div class="vm-ico"><svg viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg></div>
+          <h3>Our Vision</h3>
+          <p>To develop students who can sustain the rigorous industrial requirements in terms of technical skills and motivation, and to establish strong linkages with industries and other research organizations of national and international repute.</p>
+        </div>
+        <div class="vm-card mission reveal">
+          <div class="vm-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg></div>
+          <h3>Our Mission</h3>
+          <ul>
+            <li>To establish the institute as an institute of excellence.</li>
+            <li>To achieve excellence in imparting technical and professional education.</li>
+            <li>To strive to inculcate a sense of integrity and a high sense of responsibility amongst students.</li>
+            <li>To produce technically skilled manpower who can contribute towards the growth of the region as well as the nation.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= QUALITY POLICY & OBJECTIVE =================
+       DRAFT COPY — replace with SDCET's official Quality Policy & Objectives wording. -->
+  <section id="quality-policy" class="about-section alt">
+    <div class="wrap">
+      <span class="eyebrow reveal">Quality Policy &amp; Objective</span>
+      <h2 class="reveal">Our commitment to quality</h2>
+      <p class="qp-statement reveal">S.D. College of Engineering &amp; Technology is committed to providing quality technical education through continuous improvement in teaching-learning processes, infrastructure and student support services, in line with AICTE and AKTU norms.</p>
+      <div class="qp-objectives">
+        <div class="qp-obj reveal"><span class="qp-num">01</span><p>Maintain high academic standards through regular curriculum review and faculty development.</p></div>
+        <div class="qp-obj reveal"><span class="qp-num">02</span><p>Ensure adequate infrastructure, laboratories and learning resources for effective teaching-learning.</p></div>
+        <div class="qp-obj reveal"><span class="qp-num">03</span><p>Promote student-centric practices including mentoring, feedback and grievance redressal.</p></div>
+        <div class="qp-obj reveal"><span class="qp-num">04</span><p>Strengthen industry-institute interaction for internships, projects and placements.</p></div>
+        <div class="qp-obj reveal"><span class="qp-num">05</span><p>Continuously monitor and improve academic and administrative processes through IQAC.</p></div>
+        <div class="qp-obj reveal"><span class="qp-num">06</span><p>Encourage research, innovation and entrepreneurship across all departments.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CODE OF CONDUCT ================= -->
+  <section id="code-of-conduct" class="about-section alt">
+    <div class="wrap">
+      <span class="eyebrow reveal">Code of Conduct</span>
+      <h2 class="reveal">Code of Conduct for Students</h2>
+      <div class="qp-objectives">
+        <div class="qp-obj reveal"><span class="qp-num">01</span><p>All students admitted to the Institute are subject to the discipline and control of the Institute authorities. The students are required to adhere strictly to the rules and regulations that may be framed from time to time by the Institute authorities.</p></div>
+        <div class="qp-obj reveal"><span class="qp-num">02</span><p>Proper observance of Institute&rsquo;s discipline, good conduct and participation in Curricular, Co-Curricular, and Extracurricular activities are important for successful graduation and a bright future of the students.</p></div>
+        <div class="qp-obj reveal"><span class="qp-num">03</span><p>Students must be regular and punctual in attending the classes and all other activities of the Institute. It must be ensured that the students maintain at least the minimum 75% attendance as specified by the University norms.</p></div>
+        <div class="qp-obj reveal"><span class="qp-num">04</span><p>Each student must wear Institute uniform on the days as instructed by the Institute. Students shall come to the campus clean, tidy and neatly dressed.</p></div>
+        <div class="qp-obj reveal"><span class="qp-num">05</span><p>Students must carry his/her identity card while in the campus and also outside the campus while representing the Institute.</p></div>
+        <div class="qp-obj reveal"><span class="qp-num">06</span><p>A student must take prior written permission of the Class Mentor and the HOD in case he/she is unable to attend the lectures and/or practicals for more than three days.</p></div>
+        <div class="qp-obj reveal"><span class="qp-num">07</span><p>Students should help to maintain the campus clean, tidy and plastic free.</p></div>
+        <div class="qp-obj reveal"><span class="qp-num">08</span><p>The conduct of the students inside and outside the campus should be such that it will raise their own image and the image of the Institute in society.</p></div>
+        <div class="qp-obj reveal"><span class="qp-num">09</span><p>The students must not participate in any antisocial activity. If any objectionable conduct within or outside the premises of the Institute by the student is observed or reported, then he/she is liable for strict disciplinary action.</p></div>
+        <div class="qp-obj reveal"><span class="qp-num">10</span><p>No notice of any kind shall be circulated among the students or pasted on the notice-board without the previous written approval from the Director.</p></div>
+        <div class="qp-obj reveal"><span class="qp-num">11</span><p>According to the verdict of the Supreme Court and the University Act 1956&ndash;Regulation 26(1)g&ndash;2009, the students found guilty of ragging are liable for punishment.</p></div>
+        <div class="qp-obj reveal"><span class="qp-num">12</span><p>Students should read the notices put on the notice board of the Institute, department and office regularly.</p></div>
+      </div>
+
+      <h3 class="reveal" style="margin:40px 0 0;font-size:1.15rem;color:var(--navy-950);">Acts that Constitute Misconduct &mdash; Leading to Disciplinary Action</h3>
+      <div class="qp-objectives" style="margin-top:20px;">
+        <div class="qp-obj reveal"><span class="qp-num">01</span><p>Physical assault or threat, against any member of the campus.</p></div>
+        <div class="qp-obj reveal"><span class="qp-num">02</span><p>Carrying of, use of or threat to use any weapons.</p></div>
+        <div class="qp-obj reveal"><span class="qp-num">03</span><p>Violation of the status, dignity and honor of a student belonging to the Scheduled Castes, Scheduled Tribes and/or any religion.</p></div>
+        <div class="qp-obj reveal"><span class="qp-num">04</span><p>Any practice, whether verbal or otherwise, derogatory to girls/women.</p></div>
+        <div class="qp-obj reveal"><span class="qp-num">05</span><p>Creating ill-will or intolerance on religious or communal grounds.</p></div>
+        <div class="qp-obj reveal"><span class="qp-num">06</span><p>Disrupting any teaching, study, assessment or research activities or the administration of the institute.</p></div>
+        <div class="qp-obj reveal"><span class="qp-num">07</span><p>Damaging or wrongfully dealing with any property under the control of the Institute; any property on Institute premises; or property on a location where a student is present under the auspices of the Institute.</p></div>
+        <div class="qp-obj reveal"><span class="qp-num">08</span><p>Withholding relevant information or furnishing false or misleading information for purposes connected with academic progression.</p></div>
+        <div class="qp-obj reveal"><span class="qp-num">09</span><p>Misuse of social media for spreading/forwarding contents that are objectionable by law.</p></div>
+        <div class="qp-obj reveal"><span class="qp-num">10</span><p>Indulging in any antisocial activity.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= MANAGED BY ================= -->
+  <section id="managed-by" class="about-section">
+    <div class="wrap managed-by-grid">
+      <div class="reveal">
+        <span class="eyebrow">Managed By</span>
+        <h2>Governing Body</h2>
+        <p class="lede">SDCET is run under the oversight of a registered educational trust that has been building institutions in Muzaffarnagar and the surrounding region for decades &mdash; providing governance, long-term academic direction and continuity to the college.</p>
+      </div>
+      <a class="governing-pill reveal" href="#managed-by" onclick="return false;">
+        <span class="gb-ico"><svg viewBox="0 0 24 24"><path d="M4 21V9l8-5 8 5v12"/><path d="M9 21v-7h6v7"/><path d="M4 21h16"/></svg></span>
+        <span class="gb-name-wrap">
+          <span class="gb-label">Governing Body</span>
+          <span class="gb-name">Sanatan Dharam College Association</span>
+        </span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+
+    <div class="footer-cols footer-row">
+      <div>
+        <h4>About SDCET</h4>
+        <ul>
+          <li><a href="about.html#overview">Overview</a></li>
+          <li><a href="about.html#vision-mission">Leadership Message</a></li>
+          <li><a href="about.html#managed-by">Management Committee</a></li>
+          <li><a href="committees.html">Institute Committees</a></li>
+          <li><a href="iqac.html">IQAC</a></li>
+          <li><a href="about.html">Mandatory Disclosure</a></li>
+          <li><a href="about.html#overview">Affiliations</a></li>
+          <li><a href="about.html#overview">Approvals</a></li>
+          <li><a href="about.html#code-of-conduct">Code of Conduct</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Infrastructure</h4>
+        <ul>
+          <li><a href="../index.html#campus">Classroom</a></li>
+          <li><a href="../index.html#campus">Labs</a></li>
+          <li><a href="../index.html#campus">Library</a></li>
+          <li><a href="../index.html#campus">Auditorium / Seminar Hall</a></li>
+          <li><a href="../index.html#campus">Hostel</a></li>
+          <li><a href="../index.html#campus">Sports</a></li>
+          <li><a href="../index.html#campus">Canteen</a></li>
+          <li><a href="../index.html#campus">Medical Facilities</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Academics</h4>
+        <ul>
+          <li><a href="academic-calendar.html">Academic Calendar</a></li>
+          <li><a href="../index.html#programs">Faculty</a></li>
+          <li><a href="../index.html#programs">Examinations</a></li>
+          <li><a href="../index.html#contact">All Notices</a></li>
+          <li><a href="../index.html#programs">Syllabus</a></li>
+          <li><a href="../index.html#contact">Circulars</a></li>
+          <li><a href="clubs.html">Clubs</a></li>
+          <li><a href="../index.html#programs">Results</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Admission</h4>
+        <ul>
+          <li><a href="../index.html#admissions">Overview</a></li>
+          <li><a href="../index.html#programs">Courses</a></li>
+          <li><a href="../index.html#admissions">Hostel Fee</a></li>
+          <li><a href="../index.html#admissions">Eligibility Criteria</a></li>
+          <li><a href="../index.html#admissions">Payment Procedure</a></li>
+          <li><a href="../index.html#admissions">Documents</a></li>
+          <li><a href="../index.html#admissions">FAQs</a></li>
+          <li><a href="../index.html#admissions">Lateral Entry</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Courses</h4>
+        <ul>
+          <li><a class="strong-link" href="../index.html#placements">Placements</a></li>
+          <li><a class="strong-link" href="../index.html#contact">Happenings</a></li>
+          <li><a class="strong-link" href="../index.html#placements">Testimonials</a></li>
+          <li><a class="strong-link" href="../index.html#contact">Careers</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-cols footer-row">
+      <div>
+        <h4>Research &amp; Innovation</h4>
+        <ul>
+          <li><a href="../index.html#why-us">Overview</a></li>
+          <li><a href="../index.html#why-us">Recent Innovations</a></li>
+          <li><a href="../index.html#why-us">Publications</a></li>
+          <li><a href="../index.html#why-us">Projects</a></li>
+          <li><a href="../index.html#campus">Labs</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Student Corner</h4>
+        <ul>
+          <li><a href="../index.html#contact">Anti Ragging Cell</a></li>
+          <li><a href="../index.html#contact">Student Discipline Policy</a></li>
+          <li><a href="../index.html#contact">Value Education</a></li>
+          <li><a href="../index.html#contact">Resources</a></li>
+          <li><a href="../index.html#campus">Library</a></li>
+          <li><a href="../index.html#contact">Women Grievance Cell</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="../index.html#why-us">AICTE</a></li>
+          <li><a href="../index.html#why-us">AKTU</a></li>
+          <li><a href="../index.html#why-us">NBA</a></li>
+          <li><a href="../index.html#contact">IIC</a></li>
+          <li><a href="iqac.html">IQAC</a></li>
+          <li><a href="../index.html#contact">e-Newsletter</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Other Links</h4>
+        <ul>
+          <li><a href="../index.html#top">Sitemap</a></li>
+          <li><a href="../index.html#contact">Disclaimer</a></li>
+          <li><a href="../index.html#contact">Alumni</a></li>
+          <li><a href="../index.html#contact">Privacy Policy</a></li>
+          <li><a href="../index.html#contact">Student Login</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="foot-contact">
+          <ul>
+            <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2Z"/></svg></span> 9258256931-38</li>
+            <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg></span> info@sdcetmzn.org</li>
+            <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21c-4-3.5-8-7.5-8-12a8 8 0 0 1 16 0c0 4.5-4 8.5-8 12Z"/><circle cx="12" cy="9" r="2.5"/></svg></span> Jansath Road, Muzaffarnagar, Uttar Pradesh 251002</li>
+          </ul>
+        </div>
+        <div class="foot-follow">
+          <h4>Follow Us</h4>
+          <div class="social-row">
+            <a href="../index.html#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 9h3V6h-3a3 3 0 0 0-3 3v2H9v3h2v6h3v-6h3l1-3h-4v-2a1 1 0 0 1 1-1Z"/></svg></a>
+            <a href="../index.html#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+            <a href="../index.html#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="6" width="20" height="12" rx="3"/><path d="m10 9 5 3-5 3V9Z"/></svg></a>
+            <a href="../index.html#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 10v7M7 7v.01M11 17v-4a2 2 0 0 1 4 0v4M11 13v4"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-top">
+      <div>
+        <h3>Subscribe Newsletter</h3>
+        <p>Notices, events and admission alerts &mdash; straight to your inbox.</p>
+      </div>
+      <form class="newsletter" onsubmit="return false;">
+        <input type="email" placeholder="Enter your email" id="newsletter-email">
+        <button type="submit" class="btn btn-primary">Subscribe &rarr;</button>
+      </form>
+    </div>
+
+    <div class="foot-bottom">
+      <div class="foot-bottom-copy">
+        <span>&copy; 2026 S.D. College of Engineering &amp; Technology, Muzaffarnagar. All rights reserved.</span>
+      </div>
+      <div class="foot-bottom-copy" style="text-align:right;">
+        <span>Website design &amp; development by <a href="../index.html#">TechMNHub</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="floating-widgets">
+  <a class="side-qa-whatsapp" href="https://wa.me/919258256931?text=Hi%2C%20I%20want%20to%20know%20about%20admission%202026-27" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.36 2 11.7c0 1.98.6 3.82 1.63 5.36L2 22l5.13-1.56A10.2 10.2 0 0 0 12 21.4c5.52 0 10-4.36 10-9.7S17.52 2 12 2Zm5.47 12.38c-.28-.14-1.67-.82-1.93-.92-.26-.1-.45-.14-.64.14-.19.28-.74.92-.9 1.1-.17.19-.33.21-.61.07-.28-.14-1.18-.43-2.24-1.38-.83-.74-1.39-1.65-1.55-1.93-.16-.28-.02-.43.12-.57.13-.13.28-.33.42-.5.14-.16.19-.28.28-.47.1-.19.05-.35-.02-.5-.07-.14-.64-1.54-.88-2.11-.23-.55-.47-.48-.64-.49-.17-.01-.35-.01-.54-.01-.19 0-.5.07-.76.35-.26.28-1 1-1 2.42 0 1.43 1.02 2.81 1.17 3 .14.19 2 3.06 4.85 4.29.68.29 1.21.47 1.62.6.68.22 1.3.19 1.79.11.55-.08 1.67-.68 1.9-1.34.24-.66.24-1.22.17-1.34-.07-.12-.26-.19-.54-.33Z"/></svg>
+  </a>
+  <a class="side-qa-admission" href="../index.html#admissions">Register For Admission 2026-27</a>
+</div>
+
+<!-- Floating chatbot button — placeholder for now. Wire this up to your
+     actual chatbot widget later (Tawk.to / Crisp / a custom bot / etc.):
+     replace the onclick with that widget's open() call. -->
+<button class="chatbot-fab" onclick="alert('Chatbot coming soon! Wire this button up to your chat widget.')" aria-label="Chat with us">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5Z"/></svg>
+</button>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
