@@ -16,7 +16,6 @@ clean placeholder box dikh jayega (page tootega nahi).
 | `lab.jpg`             | Life@SDCET → Academics tab → Engineering Labs    | 800×640         |
 | `library.jpg`         | Life@SDCET → Academics tab → Library             | 800×640         |
 | `bosch-centre.jpg`    | Life@SDCET → Academics tab → Bosch Bridge Centre | 800×640         |
-| `hostel.jpg`          | Life@SDCET → Campus tab → Hostel                 | 800×640         |
 | `sports.jpg`          | Life@SDCET → Campus tab → Sports & Clubs         | 800×640         |
 | `canteen.jpg`         | Life@SDCET → Campus tab → Canteen                | 800×640         |
 | `medical.jpg`         | Life@SDCET → Campus tab → Medical Room           | 800×640         |
