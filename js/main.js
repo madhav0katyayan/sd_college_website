@@ -692,13 +692,14 @@ function toggleMobileAcademics(btn) {
   var tabs=document.querySelectorAll('.ab2-tab'); if(!tabs.length) return;
   var panels=document.querySelectorAll('.ab2-panel');
   function open(id,scroll){
-    if(id==='approvals') id='overview';
+    var want=id; if(id==='approvals') id='overview';
     var hit=false;
     panels.forEach(function(p){var on=p.id===id; if(on) hit=true;});
     if(!hit) id='overview';
     panels.forEach(function(p){var on=p.id===id; p.hidden=!on; p.classList.toggle('on',on);});
     tabs.forEach(function(t){var on=t.dataset.tab===id; t.classList.toggle('on',on); t.setAttribute('aria-selected',on);
       if(on&&t.scrollIntoView) t.scrollIntoView({block:'nearest',inline:'center'});});
+    if(want==='approvals'){var ap=document.getElementById('approvals'); if(ap) setTimeout(function(){ap.scrollIntoView({behavior:'smooth',block:'center'});},60);}
     if(scroll){var bar=document.querySelector('.ab2-tabbar'),h=document.querySelector('.adm-hero');
       var y=h?h.getBoundingClientRect().bottom+window.pageYOffset:0; if(window.pageYOffset>y) window.scrollTo({top:y,behavior:'smooth'});}
   }
@@ -721,4 +722,19 @@ function toggleMobileAcademics(btn) {
   dots.forEach(function(d,k){d.addEventListener('click',function(){show(k);start();});});
   box.addEventListener('mouseenter',stop); box.addEventListener('mouseleave',start);
   show(i); start();
+})();
+
+// ---- Academics v2: programme filter tabs ----
+(function(){
+  var tabs=document.querySelectorAll('.ac2-tabs .ab2-tab'); if(!tabs.length) return;
+  var cards=document.querySelectorAll('#ap-grid .ap-card');
+  function filter(f,scroll){
+    var ok=false; tabs.forEach(function(t){if(t.dataset.filter===f) ok=true;}); if(!ok) f='all';
+    tabs.forEach(function(t){var on=t.dataset.filter===f; t.classList.toggle('on',on); t.setAttribute('aria-selected',on);});
+    cards.forEach(function(c){c.hidden=!(f==='all'||c.dataset.level===f);});
+    if(scroll){var s=document.getElementById('courses'); if(s) s.scrollIntoView({behavior:'smooth',block:'start'});}
+  }
+  tabs.forEach(function(t){t.addEventListener('click',function(){filter(t.dataset.filter,false);});});
+  function fromHash(){var h=location.hash.slice(1); if(/^(btech|mtech|mba|diploma)$/.test(h)) filter(h,true);}
+  window.addEventListener('hashchange',fromHash); fromHash();
 })();
